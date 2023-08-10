@@ -46,7 +46,7 @@ public class MainMenu : MonoBehaviour
 
     public void Prologue0()
     {
-        SceneManager.LoadScene("MainRoom");
+        SceneManager.LoadScene("MainRoom2");
     }
 
 
