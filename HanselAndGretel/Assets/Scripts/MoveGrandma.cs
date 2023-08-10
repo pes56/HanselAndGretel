@@ -10,6 +10,11 @@ public class MoveGrandma : MonoBehaviour
     int NextPosIndex;
     Transform nextPos;
 
+    private bool hasChanged = false;
+    private float roomChange = 0;
+    private float waitTimeIn = 0.5f;
+    private float waitTimeOut = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
