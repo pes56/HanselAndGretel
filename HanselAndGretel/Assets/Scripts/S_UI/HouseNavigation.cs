@@ -22,4 +22,9 @@ public class HouseNavigation : MonoBehaviour
     {
         SceneManager.LoadScene("Kitchen");
     }
+
+    public void Escape()
+    {
+        SceneManager.LoadScene("GoodEnding");
+    }
 }

@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GamePlay/KeyBox.unity
     guid: ad5123cd4562b1d48a54b1a342adfcb0
+  - enabled: 1
+    path: Assets/Scenes/GamePlay/HanselFree.unity
+    guid: 7088c0ababd222143b67e4b5ead49b30
   m_configObjects: {}
