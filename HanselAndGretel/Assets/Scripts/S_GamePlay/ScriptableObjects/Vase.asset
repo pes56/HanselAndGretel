@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87dbf08d8d8b6b469869dd216b0fdf3, type: 3}
+  m_Name: Vase
+  m_EditorClassIdentifier: 
+  itemName: Vase
+  itemImage: {fileID: 21300000, guid: 7f735148a92190d4b865ea52b6d4d9c6, type: 3}
+  description: The vase is full of pink flowers. The flowers smell sweet and look
+    freshly picked. It's odd... these types of flowers don't grow anywhere near these
+    woods.

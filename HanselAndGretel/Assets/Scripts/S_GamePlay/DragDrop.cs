@@ -9,7 +9,9 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
 
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
-    
+
+    public bool isItemInSlot;
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -27,6 +29,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
         
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
+        isItemInSlot = false;
     }
 
     public void OnEndDrag(PointerEventData eventdata)
