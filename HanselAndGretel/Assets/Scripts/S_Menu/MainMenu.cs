@@ -46,8 +46,14 @@ public class MainMenu : MonoBehaviour
 
     public void Prologue0()
     {
+        SceneManager.LoadScene("Tutorial");
+    }
+
+    public void Tutorial()
+    {
         SceneManager.LoadScene("MainRoom2");
     }
+
 
 
 
