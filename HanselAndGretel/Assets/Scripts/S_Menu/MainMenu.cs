@@ -44,6 +44,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Prologue5");
     }
 
+    public void Prologue0()
+    {
+        SceneManager.LoadScene("MainRoom");
+    }
+
 
 
 }
