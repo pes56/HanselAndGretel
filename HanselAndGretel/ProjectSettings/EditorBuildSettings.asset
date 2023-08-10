@@ -35,4 +35,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainRoom2.unity
     guid: 33f5529cb11afdc43aa9714b81826b13
+  - enabled: 1
+    path: Assets/Scenes/GamePlay/HallWay.unity
+    guid: 593b2fe4f3d99ba4e8870269cab857bc
+  - enabled: 1
+    path: Assets/Scenes/GamePlay/Basement.unity
+    guid: f0d1d6c067ff65445adf4b8e92e117a3
+  - enabled: 1
+    path: Assets/Scenes/GamePlay/HanselRoom.unity
+    guid: 9b05091354e7b8d41b7bf9a64b41b77b
+  - enabled: 1
+    path: Assets/Scenes/GamePlay/Kitchen.unity
+    guid: 17beb21aeca1c2d4daabf44dcac6b07a
+  - enabled: 1
+    path: Assets/Scenes/MainMenu/Tutorial.unity
+    guid: b924c196c0a895b43b6bf4743b7982b7
+  - enabled: 1
+    path: Assets/Scenes/GoodEnding.unity
+    guid: 015c555560ad53b4f9ecaf77fa02b249
+  - enabled: 1
+    path: Assets/Scenes/BadEnding.unity
+    guid: f2e9fe10af95e6e40b6f82048081a74c
   m_configObjects: {}
