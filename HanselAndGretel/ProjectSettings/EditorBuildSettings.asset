@@ -51,10 +51,10 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu/Tutorial.unity
     guid: b924c196c0a895b43b6bf4743b7982b7
   - enabled: 1
-    path: Assets/Scenes/GoodEnding.unity
+    path: Assets/Scenes/Endings/GoodEnding.unity
     guid: 015c555560ad53b4f9ecaf77fa02b249
   - enabled: 1
-    path: Assets/Scenes/BadEnding.unity
+    path: Assets/Scenes/Endings/BadEnding.unity
     guid: f2e9fe10af95e6e40b6f82048081a74c
   - enabled: 1
     path: Assets/Scenes/GamePlay/KeyBox.unity
