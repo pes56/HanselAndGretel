@@ -30,10 +30,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Prologues/Prologue5.unity
     guid: 5ecf0da95d829f94c8721839605f1e87
   - enabled: 0
-    path: Assets/Scenes/GamePlay/MainRoom.unity
+    path: Assets/Scenes/GamePlay/InventoryScene.unity
     guid: 590c252a64b2bb44586d99f6a22be798
   - enabled: 1
-    path: Assets/Scenes/MainRoom2.unity
+    path: Assets/Scenes/GamePlay/WitchScene.unity
     guid: 33f5529cb11afdc43aa9714b81826b13
   - enabled: 1
     path: Assets/Scenes/GamePlay/HallWay.unity
