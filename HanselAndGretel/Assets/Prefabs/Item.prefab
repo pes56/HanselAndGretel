@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 208332797583666455}
   - component: {fileID: 208332797583666452}
   - component: {fileID: 208332797583666454}
+  - component: {fileID: 7879946317316006719}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -59,6 +60,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c41457a4044aa4fb2499d170325618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  isItemInSlot: 0
 --- !u!114 &208332797583666454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,3 +92,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &7879946317316006719
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208332797583666456}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
