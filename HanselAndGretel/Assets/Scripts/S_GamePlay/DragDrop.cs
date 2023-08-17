@@ -6,14 +6,15 @@ using UnityEngine.EventSystems;
 public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler{
 
     [SerializeField] private Canvas canvas;
-
+    ItemSlot itemSlot;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
 
-    public bool isItemInSlot;
+    public string itemDesc;
 
     private void Awake()
     {
+        itemSlot = FindObjectOfType<ItemSlot>();
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }
@@ -22,6 +23,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
     {
         
         rectTransform.anchoredPosition += eventdata.delta / canvas.scaleFactor;
+        
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -29,7 +31,8 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
         
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
-        isItemInSlot = false;
+        
+        itemSlot.hideSpeechBubble();
     }
 
     public void OnEndDrag(PointerEventData eventdata)

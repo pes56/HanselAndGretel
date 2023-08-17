@@ -1,21 +1,62 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class ItemSlot : MonoBehaviour, IDropHandler
 {
     DragDrop dragDrop;
+    public GameObject speechBubble;
+    public TextMeshProUGUI hanselItemDesc;
 
+    private bool hasItem;
+
+    public void Awake()
+    {
+        speechBubble.SetActive(false);
+    }
     public void OnDrop(PointerEventData eventData)
     {
-        if (eventData.pointerDrag != null)
+        if (!hasItem && eventData.pointerDrag != null)
         {
+
+            
             eventData.pointerDrag.GetComponent<RectTransform>().transform.position = GetComponent<RectTransform>().transform.position;
             dragDrop = eventData.pointerDrag.GetComponent<DragDrop>();
-            dragDrop.isItemInSlot = true;
+            hasItem = true;
+
+            if (gameObject.CompareTag("Hansel"))
+            {
+                Vector3 yOffset = eventData.pointerDrag.GetComponent<RectTransform>().transform.position;
+                yOffset.y -= 1f;
+                eventData.pointerDrag.GetComponent<RectTransform>().transform.position = yOffset;
+
+                if (hasItem == true)
+                {
+                    showSpeechBubble();
+                }
+
+                else
+                {
+                    hideSpeechBubble();
+                }
+
+            }
+
+
             
         }
+    }
+    public void hideSpeechBubble()
+    {
+        speechBubble.SetActive(false);
+        hasItem = false;
+    }
+    public void showSpeechBubble()
+    {
+        speechBubble.SetActive(true);
+        hanselItemDesc.text = dragDrop.itemDesc;
     }
 }
