@@ -771,7 +771,7 @@ PrefabInstance:
     - target: {fileID: 208332797583666454, guid: a1185f9132e8a0a43a68e8846728ad07, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1636404805, guid: 19e12b0ad569dfb458605ef6d214d73c, type: 3}
+      objectReference: {fileID: -683317046, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
     - target: {fileID: 208332797583666456, guid: a1185f9132e8a0a43a68e8846728ad07, type: 3}
       propertyPath: m_Name
       value: Bone
@@ -900,7 +900,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959823387}
-  m_LocalRotation: {x: -0, y: -0, z: 0.11595163, w: -0.9932549}
+  m_LocalRotation: {x: -0, y: -0, z: -0.04816484, w: -0.99883944}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6647015, y: 1.5193177, z: 1.5193177}
   m_ConstrainProportionsScale: 0
@@ -908,7 +908,7 @@ RectTransform:
   - {fileID: 2090647725}
   m_Father: {fileID: 1621355095}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -13.317}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.521}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 95, y: -37}
@@ -1231,7 +1231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 70d918fc4352c37418cc1b9bc19314b6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e34d636bb2805234398162fe8999d938, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
