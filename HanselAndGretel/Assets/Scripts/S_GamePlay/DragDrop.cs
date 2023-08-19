@@ -5,10 +5,10 @@ using UnityEngine.EventSystems;
 
 public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler{
 
-    [SerializeField] private Canvas canvas;
     HanselItemDesc hanselItemDesc;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+    private Canvas canvas;
 
     public string itemDesc;
 
@@ -17,7 +17,9 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
         hanselItemDesc = FindObjectOfType<HanselItemDesc>();
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+        canvas = FindObjectOfType<Canvas>();
     }
+
 
     public void OnDrag(PointerEventData eventdata)
     {
@@ -28,11 +30,18 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        
+
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
 
-        hanselItemDesc.hideSpeechBubble();
+        if (!FindObjectOfType<HanselItemDesc>())
+        {
+            return;
+        }
+        else
+        {
+            hanselItemDesc.hideSpeechBubble();
+        }
     }
 
     public void OnEndDrag(PointerEventData eventdata)
