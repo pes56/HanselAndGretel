@@ -9,19 +9,20 @@ public class HanselItemDesc : MonoBehaviour, IDropHandler
     DragDrop dragDrop;
     public GameObject speechBubble;
     public TextMeshProUGUI hanselItemDesc;
+    public TextMeshProUGUI hanselItemText; // Reference to the TextMeshProUGUI component
 
     private bool hasItem;
 
     public void Awake()
     {
         speechBubble.SetActive(false);
+        hanselItemText.gameObject.SetActive(false); // Hide the TextMeshProUGUI component initially
     }
+
     public void OnDrop(PointerEventData eventData)
     {
         if (!hasItem && eventData.pointerDrag != null)
         {
-
-
             eventData.pointerDrag.GetComponent<RectTransform>().transform.position = GetComponent<RectTransform>().transform.position;
             dragDrop = eventData.pointerDrag.GetComponent<DragDrop>();
             hasItem = true;
@@ -29,29 +30,28 @@ public class HanselItemDesc : MonoBehaviour, IDropHandler
             yOffset.y -= 1f;
             eventData.pointerDrag.GetComponent<RectTransform>().transform.position = yOffset;
 
-            if (hasItem == true)
-                {
-                    showSpeechBubble();
-                }
-
+            if (hasItem)
+            {
+                showSpeechBubble();
+            }
             else
-                {
-                    hideSpeechBubble();
-                }
-
-            
-
-
+            {
+                hideSpeechBubble();
+            }
         }
     }
+
     public void hideSpeechBubble()
     {
         speechBubble.SetActive(false);
+        hanselItemText.gameObject.SetActive(false); // Hide the TextMeshProUGUI component
         hasItem = false;
     }
+
     public void showSpeechBubble()
     {
         speechBubble.SetActive(true);
         hanselItemDesc.text = dragDrop.itemDesc;
+        hanselItemText.gameObject.SetActive(true); // Show the TextMeshProUGUI component
     }
 }

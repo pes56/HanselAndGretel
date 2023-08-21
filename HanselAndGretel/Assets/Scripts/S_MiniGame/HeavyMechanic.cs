@@ -10,6 +10,7 @@ public class HeavyMechanic : MonoBehaviour
     public GameObject centerArea;
     public Button mainButton; // Reference to the main button you want to move
     public Button leftSliderButton; // Reference to the left slider button
+    public Image hiddenImage; // Reference to the hidden image you want to reveal
 
     public float increaseAmount = 10f;
     public float maxSliderValue = 100f;
@@ -50,6 +51,9 @@ public class HeavyMechanic : MonoBehaviour
             {
                 mainButton.transform.position = targetPosition; // Ensure exact position
                 isMovingMainButton = false; // Reset the flag once returned
+
+                // Reveal the hidden image
+                hiddenImage.gameObject.SetActive(true);
 
                 // Enable the left slider button when the slider value returns to 0
                 if (slider.value == 0)
@@ -95,6 +99,9 @@ public class HeavyMechanic : MonoBehaviour
 
         // Reset the center area state
         centerArea.gameObject.SetActive(true);
+
+        // Enable the hidden image (don't disable it)
+        hiddenImage.gameObject.SetActive(true);
 
         // Enable the left slider button when the slider value returns to 0
         leftSliderButton.interactable = true;

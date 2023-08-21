@@ -8,18 +8,22 @@ public class HouseNavigation : MonoBehaviour
         SceneManager.LoadScene("HallWay");
     }
 
-    public void HallwayF()
+    public void BasementD()
     {
         SceneManager.LoadScene("Basement");
     }
 
-    public void HallwayR()
+    public void HallwayF()
     {
-        SceneManager.LoadScene("HanselRoom");
+        SceneManager.LoadScene("Hansel Room");
     }
 
-    public void HallwayL()
+    public void HallwayR()
     {
         SceneManager.LoadScene("Kitchen");
+    }
+    public void HallwayL()
+    {
+        SceneManager.LoadScene("MainRoom");
     }
 }

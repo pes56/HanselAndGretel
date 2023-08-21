@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler{
+public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
+{
 
     HanselItemDesc hanselItemDesc;
     private RectTransform rectTransform;
@@ -23,9 +24,9 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
 
     public void OnDrag(PointerEventData eventdata)
     {
-        
+
         rectTransform.anchoredPosition += eventdata.delta / canvas.scaleFactor;
-        
+
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -46,7 +47,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
 
     public void OnEndDrag(PointerEventData eventdata)
     {
-        
+
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
     }
