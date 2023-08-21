@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 19e12b0ad569dfb458605ef6d214d73c
+guid: 9846b16cf3ee5704987c3aa303eccd1f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -120,10 +120,10 @@ TextureImporter:
       name: CookBook
       rect:
         serializedVersion: 2
-        x: 181
+        x: 182
         y: 1149
-        width: 692
-        height: 742
+        width: 689
+        height: 743
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,29 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 075c5a5a6db1da84888f06c0e802fa71
-      internalID: -140415776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Candle
-      rect:
-        serializedVersion: 2
-        x: 1680
-        y: 1121
-        width: 754
-        height: 660
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82b4255d0bc592142b7a21b4781909fc
-      internalID: 1319006821
+      spriteID: ea14b9a38ee340c4e96264dc58f79e6a
+      internalID: 1541978333
       vertices: []
       indices: 
       edges: []
@@ -162,9 +141,9 @@ TextureImporter:
       name: Bone
       rect:
         serializedVersion: 2
-        x: 911
+        x: 895
         y: 1070
-        width: 651
+        width: 667
         height: 297
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -173,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd52458766d7b1449891864b924571f9
-      internalID: -1636404805
+      spriteID: f200dff1d28a28a438dc4e74b3dc6d93
+      internalID: -683317046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MagnifyingGlass
+      name: Candle
       rect:
         serializedVersion: 2
-        x: 150
-        y: 257
-        width: 742
-        height: 645
+        x: 1683
+        y: 1124
+        width: 746
+        height: 650
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +173,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 704a6226565312f4e9c1bf917d3ebf11
-      internalID: 1795598351
+      spriteID: 1d38c3a7479b1dd4bb9b580ce9e421b4
+      internalID: -164571896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldFlower
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 274
+        width: 428
+        height: 652
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46361cf558a1d284fbd4e08b79e1b464
+      internalID: 686593645
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
       name: MixingBowl
       rect:
         serializedVersion: 2
-        x: 1044
-        y: 542
-        width: 689
-        height: 477
+        x: 1045
+        y: 540
+        width: 688
+        height: 473
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b31d8c7dfb0fb904696755d93b556c40
-      internalID: -295430675
+      spriteID: 8084219f070fbe3489afa83f333c7c95
+      internalID: 1652079635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoldenFlower
+      name: MagnifyingGlass
       rect:
         serializedVersion: 2
-        x: 1962
-        y: 270
-        width: 426
-        height: 654
+        x: 151
+        y: 254
+        width: 734
+        height: 643
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 259396b3820810c4091df4cdff225486
-      internalID: 1387185917
+      spriteID: 3e819806b8a670e48937fa2ba1fef108
+      internalID: 1716794286
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Candle: 1319006821
-      CookBook: -140415776
-      Bone: -1636404805
-      MagnifyingGlass: 1795598351
-      MixingBowl: -295430675
-      GoldenFlower: 1387185917
+      Candle: -164571896
+      CookBook: 1541978333
+      Bone: -683317046
+      MagnifyingGlass: 1716794286
+      MixingBowl: 1652079635
+      GoldFlower: 686593645
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

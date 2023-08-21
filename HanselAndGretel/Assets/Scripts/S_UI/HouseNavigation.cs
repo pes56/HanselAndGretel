@@ -26,4 +26,9 @@ public class HouseNavigation : MonoBehaviour
     {
         SceneManager.LoadScene("MainRoom");
     }
+
+    public void Shelf()
+    {
+        SceneManager.LoadScene("Shelf(CloseUp)");
+    }
 }
