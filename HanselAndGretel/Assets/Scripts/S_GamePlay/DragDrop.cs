@@ -5,31 +5,43 @@ using UnityEngine.EventSystems;
 
 public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler{
 
-    [SerializeField] private Canvas canvas;
-
+    HanselItemDesc hanselItemDesc;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+    private Canvas canvas;
 
-    public bool isItemInSlot;
+    public string itemDesc;
 
     private void Awake()
     {
+        hanselItemDesc = FindObjectOfType<HanselItemDesc>();
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+        canvas = FindObjectOfType<Canvas>();
     }
+
 
     public void OnDrag(PointerEventData eventdata)
     {
         
         rectTransform.anchoredPosition += eventdata.delta / canvas.scaleFactor;
+        
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        
+
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
-        isItemInSlot = false;
+
+        if (!FindObjectOfType<HanselItemDesc>())
+        {
+            return;
+        }
+        else
+        {
+            hanselItemDesc.hideSpeechBubble();
+        }
     }
 
     public void OnEndDrag(PointerEventData eventdata)
