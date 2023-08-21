@@ -1205,6 +1205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c41457a4044aa4fb2499d170325618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 575415492}
   itemDesc: This candle looks like it's used for some sort of magic. I bet she is
     a witch!
 --- !u!224 &208332797004824890
@@ -1241,7 +1242,7 @@ GameObject:
   - component: {fileID: 208332797004824885}
   - component: {fileID: 1008224407}
   m_Layer: 5
-  m_Name: Vase
+  m_Name: Candle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
