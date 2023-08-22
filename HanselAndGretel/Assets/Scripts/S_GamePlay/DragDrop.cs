@@ -1,3 +1,4 @@
+//DRAG DROP
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,12 +11,14 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     private Canvas canvas;
+    public InventoryManager inventoryManager;
+    public bool holdingItem = false;
 
-    public string itemDesc;
+
 
     private void Awake()
     {
-        hanselItemDesc = FindObjectOfType<HanselItemDesc>();
+        inventoryManager = FindObjectOfType<InventoryManager>();
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         canvas = FindObjectOfType<Canvas>();
@@ -31,23 +34,24 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-
+        holdingItem = true;
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
-
+        //inventoryManager.UpdateItemInSlot()
         if (!FindObjectOfType<HanselItemDesc>())
         {
             return;
         }
         else
         {
+            hanselItemDesc = FindObjectOfType<HanselItemDesc>();
             hanselItemDesc.hideSpeechBubble();
         }
     }
 
     public void OnEndDrag(PointerEventData eventdata)
     {
-
+        holdingItem = false;
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
     }
