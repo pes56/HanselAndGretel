@@ -1,18 +1,29 @@
+//ITEM DISPLAY
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemDisplay : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public ItemScriptableObject itemData;
 
-    // Update is called once per frame
-    void Update()
+    public Image itemSprite;
+    public string itemName;
+    public string itemDesc;
+    public GameObject prefab;
+
+
+    private void Awake()
     {
-        
+
+        itemName = itemData.itemName;
+        itemSprite.sprite = itemData.itemSprite;
+        itemDesc = itemData.itemDescription;
+
+        prefab = itemData.itemPrefab;
+
+
+
     }
 }

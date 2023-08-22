@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class HanselItemDesc : MonoBehaviour, IDropHandler
 {
     DragDrop dragDrop;
+    ItemDisplay itemDisplay;
     public GameObject speechBubble;
     public TextMeshProUGUI hanselItemDesc;
     public TextMeshProUGUI hanselItemText; // Reference to the TextMeshProUGUI component
@@ -25,6 +26,7 @@ public class HanselItemDesc : MonoBehaviour, IDropHandler
         {
             eventData.pointerDrag.GetComponent<RectTransform>().transform.position = GetComponent<RectTransform>().transform.position;
             dragDrop = eventData.pointerDrag.GetComponent<DragDrop>();
+            itemDisplay = eventData.pointerDrag.GetComponent<ItemDisplay>();
             hasItem = true;
             Vector3 yOffset = eventData.pointerDrag.GetComponent<RectTransform>().transform.position;
             yOffset.y -= 1f;
@@ -51,7 +53,7 @@ public class HanselItemDesc : MonoBehaviour, IDropHandler
     public void showSpeechBubble()
     {
         speechBubble.SetActive(true);
-        hanselItemDesc.text = dragDrop.itemDesc;
+        hanselItemDesc.text = itemDisplay.itemDesc;
         hanselItemText.gameObject.SetActive(true); // Show the TextMeshProUGUI component
     }
 }
