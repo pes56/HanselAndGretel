@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5097541536886995125
+--- !u!1 &4531253818784303617
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,27 +8,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1818437002199884196}
-  - component: {fileID: 2043686192442738157}
-  - component: {fileID: 5255947294523138377}
-  - component: {fileID: 5934870184553142198}
+  - component: {fileID: 4531253818784303616}
+  - component: {fileID: 4531253818784303630}
+  - component: {fileID: 4531253818784303629}
+  - component: {fileID: 4531253818784303622}
+  - component: {fileID: 4531253818784303631}
+  - component: {fileID: 4325173921978794925}
   m_Layer: 5
-  m_Name: HotbarSlot
+  m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1818437002199884196
+--- !u!224 &4531253818784303616
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5097541536886995125}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.694933, y: 3.970735, z: 3.2748332}
+  m_GameObject: {fileID: 4531253818784303617}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -4054.1538}
+  m_LocalScale: {x: 0.66629493, y: 0.3230521, z: 0.3230521}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -36,45 +38,62 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -167, y: -104}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2043686192442738157
+--- !u!222 &4531253818784303630
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5097541536886995125}
+  m_GameObject: {fileID: 4531253818784303617}
   m_CullTransparentMesh: 1
---- !u!114 &5255947294523138377
+--- !u!114 &4531253818784303629
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5097541536886995125}
+  m_GameObject: {fileID: 4531253818784303617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c58533a997cf9940bb46f03c25fb254, type: 3}
+  m_Script: {fileID: 11500000, guid: 65c41457a4044aa4fb2499d170325618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotData: {fileID: 0}
   inventoryManager: {fileID: 0}
---- !u!114 &5934870184553142198
+  holdingItem: 0
+--- !u!114 &4531253818784303622
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5097541536886995125}
+  m_GameObject: {fileID: 4531253818784303617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d932f62f601232441af2f22c15266be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: b8f09636d475ef14483185d3a9788b41, type: 2}
+  itemSprite: {fileID: 4531253818784303631}
+  itemName: 
+  itemDesc: 
+  prefab: {fileID: 0}
+--- !u!114 &4531253818784303631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4531253818784303617}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.40236738, g: 0.6226415, b: 0.6226415, a: 0.1764706}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -91,3 +110,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &4325173921978794925
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4531253818784303617}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

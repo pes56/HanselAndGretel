@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Bone
   itemSprite: {fileID: -683317046, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
   itemDescription: This is a bone
-  itemPrefab: {fileID: 0}
+  itemPrefab: {fileID: 4531253818784303617, guid: dfbdc2b50e167be43ac661912523c623, type: 3}

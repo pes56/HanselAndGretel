@@ -43,7 +43,7 @@ public class InventoryManager : MonoBehaviour
     }
 
     //refresh hotbar on scene load
-    public void InstantiatePersistentUI(int slotIndex)
+    public void InstantiatePersistentUI(int slotIndex, Vector3 slotPos)
     {
         if (slotIndex >= 0 && slotIndex < hotbarSlots.Count)
         {
@@ -54,12 +54,18 @@ public class InventoryManager : MonoBehaviour
 
                 Vector3 spawnPosition = transform.position;
                 GameObject currentItemPrefab = Instantiate(hotbarSlots[slotIndex].currentItem.itemPrefab, spawnPosition, Quaternion.identity);
-                Debug.Log("There is an item in slot " + slotIndex);
+
+                Transform canvasTransform = FindObjectOfType<Canvas>().transform;
+                currentItemPrefab.transform.SetParent(canvasTransform, false);
+
+                currentItemPrefab.transform.position = slotPos;
+
+                
             }
 
             else
             {
-                Debug.Log("There is NO item in slot " + slotIndex);
+                
             }
         }
     }

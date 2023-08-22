@@ -16,4 +16,4 @@ MonoBehaviour:
   itemSprite: {fileID: 1319006821, guid: 19e12b0ad569dfb458605ef6d214d73c, type: 3}
   itemDescription: This candle looks like it's used for some sort of magic. I bet
     she is a witch!
-  itemPrefab: {fileID: 0}
+  itemPrefab: {fileID: 3563874399936555950, guid: 85a2018bb86dfbe43ab97f8d0eb71844, type: 3}
