@@ -22,4 +22,10 @@ public class HouseNavigation : MonoBehaviour
     {
         SceneManager.LoadScene("Kitchen");
     }
+
+    public void CouchRoom()
+    {
+
+        SceneManager.LoadScene("MainRoom");
+    }
 }

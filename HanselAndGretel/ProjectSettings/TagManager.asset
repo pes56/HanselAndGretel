@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Hansel
+  - MainCanvas
+  - Hotbar
   layers:
   - Default
   - TransparentFX
