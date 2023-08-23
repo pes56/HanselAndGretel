@@ -12,6 +12,7 @@ public class ItemManager : MonoBehaviour
     {
         if (Instance == null)
         {
+            
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
@@ -21,33 +22,11 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        SceneManager.sceneUnloaded += OnSceneUnloaded;
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    private void OnDisable()
-    {
-        SceneManager.sceneUnloaded -= OnSceneUnloaded;
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    private void OnSceneUnloaded(Scene scene)
-    {
-        RecordItemPositions();
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        CheckActiveItemsInScene(scene.name);
-    }
-
-    private void RecordItemPositions()
+    public void RecordItemPositions()
     {
         foreach (ItemScriptableObject item in itemsInGame)
         {
-            if (item.activeInScene == SceneManager.GetActiveScene().name && item.inHotbar == false)
+            if (item.activeInScene == SceneManager.GetActiveScene().name)
             {
                 GameObject itemObject = GameObject.FindGameObjectWithTag(item.itemName);
                 if (itemObject != null)
@@ -59,13 +38,19 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    private void CheckActiveItemsInScene(string sceneName)
+    public void SetItemPositions(string sceneName)
     {
         foreach (ItemScriptableObject item in itemsInGame)
         {
             if (item.activeInScene == sceneName)
             {
                 Debug.Log(item.itemName + " is active in the current scene.");
+
+                Debug.Log("Assigning " + item.itemName + " last known position");
+
+                GameObject itemObject = GameObject.FindGameObjectWithTag(item.itemName);
+                itemObject.transform.localPosition = item.lastPosition;
+
             }
         }
     }

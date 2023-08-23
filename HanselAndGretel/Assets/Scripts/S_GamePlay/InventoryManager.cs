@@ -55,6 +55,16 @@ public class InventoryManager : MonoBehaviour
             if (hotbarSlots[slotIndex].currentItem != null)
             {
 
+                //check that there isnt already an item of this type in this scene
+                if (GameObject.FindGameObjectWithTag(hotbarSlots[slotIndex].currentItem.name) != null)
+                {
+                   GameObject itemToDelete = GameObject.FindGameObjectWithTag(hotbarSlots[slotIndex].currentItem.name);
+                   Destroy(itemToDelete);
+                    Debug.Log("Deleting Item");
+
+                }
+
+                 
                 //instantiate the item from scriptable object data
                 Vector3 spawnPosition = slotPos;
                 GameObject currentItemPrefab = Instantiate(hotbarSlots[slotIndex].currentItem.itemPrefab, spawnPosition, Quaternion.identity);
@@ -69,11 +79,6 @@ public class InventoryManager : MonoBehaviour
                 hotbarSlots[slotIndex].currentItem.activeInScene = currentScene.name;
                 Debug.Log(currentScene.name);
 
-
-            }
-
-            else
-            {
 
             }
         }

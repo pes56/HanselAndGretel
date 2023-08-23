@@ -9,6 +9,7 @@ public class ItemDisplay : MonoBehaviour
 {
     public ItemScriptableObject itemData;
 
+    ItemManager itemManager;
     public Image itemSprite;
     public string itemName;
     public string itemDesc;
@@ -22,14 +23,14 @@ public class ItemDisplay : MonoBehaviour
         itemSprite = gameObject.GetComponent<Image>();
         itemSprite.sprite = itemData.itemSprite;
         itemDesc = itemData.itemDescription;
-
+        itemManager = FindObjectOfType<ItemManager>();
         prefab = itemData.itemPrefab;
 
         //check what scene is active
         Scene currentScene = SceneManager.GetActiveScene();
         itemData.activeInScene = currentScene.name;
-        
 
-
+        //assign items with their last known position
+        itemManager.SetItemPositions(SceneManager.GetActiveScene().name);
     }
 }

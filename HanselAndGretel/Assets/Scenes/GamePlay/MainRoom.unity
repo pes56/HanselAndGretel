@@ -621,6 +621,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 614393185}
+  - component: {fileID: 614393186}
   m_Layer: 0
   m_Name: ItemManager
   m_TagString: Untagged
@@ -643,6 +644,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &614393186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614393184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09ed37ca4fa7714d9520c32e3268ce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemsInGame:
+  - {fileID: 11400000, guid: b8f09636d475ef14483185d3a9788b41, type: 2}
+  - {fileID: 11400000, guid: f442966363be1e14b9af69d8bfaadb90, type: 2}
+  - {fileID: 11400000, guid: dd4d11535eaf5f54683733f36be98993, type: 2}
+  - {fileID: 11400000, guid: 13daef737820d8b4aa4ed1b15163ec30, type: 2}
+  - {fileID: 11400000, guid: 3d178440f686493429a609700a2d4ff4, type: 2}
 --- !u!224 &793118825 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4845579858821253908, guid: 85a2018bb86dfbe43ab97f8d0eb71844, type: 3}
@@ -790,6 +809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2af4944a0cb6224a8aca959f5c0c59c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemManager: {fileID: 0}
 --- !u!4 &1589880328
 Transform:
   m_ObjectHideFlags: 0

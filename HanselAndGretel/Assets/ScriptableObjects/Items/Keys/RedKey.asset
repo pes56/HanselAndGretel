@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
   m_Name: RedKey
   m_EditorClassIdentifier: 
-  itemName: Red Key
+  itemName: RedKey
   itemSprite: {fileID: 1362707612, guid: 9d6257fa6f5fff54580de60893944c53, type: 3}
   itemDescription: This looks like it might open something. Try that red chest over
     there!
   itemPrefab: {fileID: 3169697911838425187, guid: 53637a5d72cf44e41bc3cff889d1048a, type: 3}
+  inHotbar: 0
+  activeInScene: Hansel Room
+  gameLoadPosition: {fileID: 3169697911838425187, guid: 53637a5d72cf44e41bc3cff889d1048a, type: 3}
+  lastPosition: {x: 169, y: -154, z: 0}
