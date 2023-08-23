@@ -16,7 +16,7 @@ public class ItemDisplay : MonoBehaviour
 
     private void Awake()
     {
-
+        //assign variables at runtime
         itemName = itemData.itemName;
         itemSprite = gameObject.GetComponent<Image>();
         itemSprite.sprite = itemData.itemSprite;

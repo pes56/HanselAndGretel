@@ -11,10 +11,12 @@ public class ItemSlot : MonoBehaviour, IDropHandler, IPointerExitHandler
 
     public SlotScriptableObject slotData;
     public InventoryManager inventoryManager;
+    public ItemManager itemManager;
 
     public void Awake()
     {
         inventoryManager = FindObjectOfType<InventoryManager>();
+        itemManager = FindObjectOfType<ItemManager>();
         inventoryManager.InstantiatePersistentUI(slotData.slot, gameObject.transform.position);
 
     }
@@ -32,7 +34,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler, IPointerExitHandler
                 if (droppedItemData != null)
                 {
                     inventoryManager.AddItemToSlot(slotData.slot, droppedItemData);
-
+                    droppedItemData.InHotbar = true;
                 }
             }
         }
@@ -48,6 +50,13 @@ public class ItemSlot : MonoBehaviour, IDropHandler, IPointerExitHandler
             {
                 inventoryManager.RemoveItemFromSlot(slotData.slot);
                 dragdrop.holdingItem = false;
+
+                ItemDisplay itemDisplay = eventData.pointerDrag.GetComponent<ItemDisplay>();
+                if (itemDisplay != null)
+                {
+                    ItemScriptableObject droppedItemData = itemDisplay.itemData;
+                    droppedItemData.InHotbar = false;
+                }
             }
 
 

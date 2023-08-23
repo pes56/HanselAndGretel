@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RedKey
   m_EditorClassIdentifier: 
   itemName: Red Key
-  itemSprite: {fileID: 21300000, guid: 8a34662f79ad57c42965dd9a4aec9d1e, type: 3}
+  itemSprite: {fileID: 1362707612, guid: 9d6257fa6f5fff54580de60893944c53, type: 3}
   itemDescription: This looks like it might open something. Try that red chest over
     there!
   itemPrefab: {fileID: 3169697911838425187, guid: 53637a5d72cf44e41bc3cff889d1048a, type: 3}

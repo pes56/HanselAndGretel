@@ -12,6 +12,7 @@ public class InventoryManager : MonoBehaviour
 
     public static InventoryManager Instance { get; private set; }
 
+    //singleton pattern
     private void Awake()
     {
         if (Instance == null)
@@ -58,7 +59,7 @@ public class InventoryManager : MonoBehaviour
 
                 Transform canvasTransform = FindObjectOfType<Canvas>().transform;
                 currentItemPrefab.transform.SetParent(canvasTransform, false);
-                Debug.Log(slotPos);
+                
                 currentItemPrefab.transform.position = slotPos;
 
 
