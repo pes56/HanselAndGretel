@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - CenterArea
+  - Candle
+  - Hotbar
+  - Bone
+  - RedKey
+  - MagnifyingGlass
+  - MixingBowl
   layers:
   - Default
   - TransparentFX

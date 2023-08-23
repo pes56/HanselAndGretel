@@ -17,3 +17,7 @@ MonoBehaviour:
   itemDescription: Ew! This looks like it came from a person. You have to get me
     out of here!
   itemPrefab: {fileID: 4588275923700496330, guid: dfbdc2b50e167be43ac661912523c623, type: 3}
+  inHotbar: 0
+  activeInScene: Hansel Room
+  gameLoadPosition: {fileID: 4588275923700496330, guid: dfbdc2b50e167be43ac661912523c623, type: 3}
+  lastPosition: {x: -248, y: -174, z: 0}

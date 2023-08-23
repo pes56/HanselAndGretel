@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
   m_Name: MagnifyingGlass
   m_EditorClassIdentifier: 
-  itemName: Magnifying Glass
+  itemName: MagnifyingGlass
   itemSprite: {fileID: 1716794286, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
   itemDescription: This looks like a magnifying glass. Maybe the Witch has bad eyesight?
   itemPrefab: {fileID: 6984504174430474699, guid: ce51fc0d58a9ac044ad700713de44594, type: 3}
+  inHotbar: 0
+  activeInScene: 
+  gameLoadPosition: {fileID: 6984504174430474699, guid: ce51fc0d58a9ac044ad700713de44594, type: 3}
+  lastPosition: {x: -137, y: -69, z: 0}
