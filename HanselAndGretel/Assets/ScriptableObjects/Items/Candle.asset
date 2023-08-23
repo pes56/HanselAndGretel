@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
-  m_Name: MagnifyingGlass
+  m_Name: Candle
   m_EditorClassIdentifier: 
-  itemName: 
-  itemSprite: {fileID: 0}
-  itemDescription: 
-  itemPrefab: {fileID: 0}
+  itemName: Candle
+  itemSprite: {fileID: -164571896, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
+  itemDescription: This looks like it was used for some scary magic!
+  itemPrefab: {fileID: 4845579858821253909, guid: 85a2018bb86dfbe43ab97f8d0eb71844, type: 3}

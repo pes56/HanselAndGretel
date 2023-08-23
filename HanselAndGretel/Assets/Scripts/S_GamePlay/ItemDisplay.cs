@@ -18,6 +18,7 @@ public class ItemDisplay : MonoBehaviour
     {
 
         itemName = itemData.itemName;
+        itemSprite = gameObject.GetComponent<Image>();
         itemSprite.sprite = itemData.itemSprite;
         itemDesc = itemData.itemDescription;
 

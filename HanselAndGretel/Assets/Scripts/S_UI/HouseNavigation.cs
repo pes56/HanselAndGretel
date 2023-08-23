@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class HouseNavigation : MonoBehaviour
 {
-    public void MainRoom()
+    public void HallWay()
     {
         SceneManager.LoadScene("HallWay");
     }
@@ -13,16 +13,16 @@ public class HouseNavigation : MonoBehaviour
         SceneManager.LoadScene("Basement");
     }
 
-    public void HallwayF()
+    public void HanselRoom()
     {
         SceneManager.LoadScene("Hansel Room");
     }
 
-    public void HallwayR()
+    public void Kitchen()
     {
         SceneManager.LoadScene("Kitchen");
     }
-    public void HallwayL()
+    public void MainRoom()
     {
         SceneManager.LoadScene("MainRoom");
     }

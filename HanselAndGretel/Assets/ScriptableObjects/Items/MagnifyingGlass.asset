@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
-  m_Name: RedKey
+  m_Name: MagnifyingGlass
   m_EditorClassIdentifier: 
-  itemName: 
-  itemSprite: {fileID: 0}
-  itemDescription: 
-  itemPrefab: {fileID: 0}
+  itemName: Magnifying Glass
+  itemSprite: {fileID: 1716794286, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
+  itemDescription: This looks like a magnifying glass. Maybe the Witch has bad eyesight?
+  itemPrefab: {fileID: 6984504174430474699, guid: ce51fc0d58a9ac044ad700713de44594, type: 3}

@@ -53,12 +53,12 @@ public class InventoryManager : MonoBehaviour
             if (hotbarSlots[slotIndex].currentItem != null)
             {
 
-                Vector3 spawnPosition = transform.position;
+                Vector3 spawnPosition = slotPos;
                 GameObject currentItemPrefab = Instantiate(hotbarSlots[slotIndex].currentItem.itemPrefab, spawnPosition, Quaternion.identity);
 
                 Transform canvasTransform = FindObjectOfType<Canvas>().transform;
                 currentItemPrefab.transform.SetParent(canvasTransform, false);
-
+                Debug.Log(slotPos);
                 currentItemPrefab.transform.position = slotPos;
 
 

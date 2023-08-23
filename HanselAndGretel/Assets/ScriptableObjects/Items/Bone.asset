@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
-  m_Name: Candle
+  m_Name: Bone
   m_EditorClassIdentifier: 
-  itemName: 
-  itemSprite: {fileID: 0}
-  itemDescription: 
-  itemPrefab: {fileID: 0}
+  itemName: Bone
+  itemSprite: {fileID: -683317046, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
+  itemDescription: Ew! This looks like it came from a person. You have to get me
+    out of here!
+  itemPrefab: {fileID: 4588275923700496330, guid: dfbdc2b50e167be43ac661912523c623, type: 3}
