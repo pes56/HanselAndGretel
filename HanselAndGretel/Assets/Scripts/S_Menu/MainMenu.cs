@@ -51,7 +51,7 @@ public class MainMenu : MonoBehaviour
 
     public void Tutorial()
     {
-        SceneManager.LoadScene("MainRoom2");
+        SceneManager.LoadScene("MainRoom");
     }
 
 
