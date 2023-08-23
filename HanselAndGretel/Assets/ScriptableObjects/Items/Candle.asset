@@ -16,3 +16,7 @@ MonoBehaviour:
   itemSprite: {fileID: -164571896, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
   itemDescription: This looks like it was used for some scary magic!
   itemPrefab: {fileID: 4845579858821253909, guid: 85a2018bb86dfbe43ab97f8d0eb71844, type: 3}
+  inHotbar: 0
+  activeInScene: 
+  gameLoadPosition: {fileID: 4845579858821253909, guid: 85a2018bb86dfbe43ab97f8d0eb71844, type: 3}
+  lastPosition: {x: 0, y: 0, z: 0}

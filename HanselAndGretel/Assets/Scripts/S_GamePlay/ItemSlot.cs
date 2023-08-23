@@ -34,7 +34,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler, IPointerExitHandler
                 if (droppedItemData != null)
                 {
                     inventoryManager.AddItemToSlot(slotData.slot, droppedItemData);
-                    droppedItemData.InHotbar = true;
+                    droppedItemData.inHotbar = true;
                 }
             }
         }
@@ -55,7 +55,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler, IPointerExitHandler
                 if (itemDisplay != null)
                 {
                     ItemScriptableObject droppedItemData = itemDisplay.itemData;
-                    droppedItemData.InHotbar = false;
+                    droppedItemData.inHotbar = false;
                 }
             }
 

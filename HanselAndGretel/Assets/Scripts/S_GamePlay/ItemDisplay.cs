@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ItemDisplay : MonoBehaviour
 {
@@ -24,6 +25,10 @@ public class ItemDisplay : MonoBehaviour
 
         prefab = itemData.itemPrefab;
 
+        //check what scene is active
+        Scene currentScene = SceneManager.GetActiveScene();
+        itemData.activeInScene = currentScene.name;
+        
 
 
     }
