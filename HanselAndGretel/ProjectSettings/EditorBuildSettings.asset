@@ -26,9 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prologues/Prologue4.unity
     guid: 3c55b2336ba103e4cb4efe2bd86c40c6
-  - enabled: 1
-    path: Assets/Scenes/Prologues/Prologue5.unity
-    guid: 5ecf0da95d829f94c8721839605f1e87
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/GamePlay/MainRoom.unity
     guid: 590c252a64b2bb44586d99f6a22be798
@@ -42,8 +42,8 @@ EditorBuildSettings:
     path: Assets/Scenes/GamePlay/Basement.unity
     guid: f0d1d6c067ff65445adf4b8e92e117a3
   - enabled: 0
-    path: Assets/Scenes/GamePlay/HanselRoom.unity
-    guid: 9b05091354e7b8d41b7bf9a64b41b77b
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/GamePlay/Kitchen.unity
     guid: 17beb21aeca1c2d4daabf44dcac6b07a
@@ -65,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GamePlay/Shelf(CloseUp).unity
     guid: fef67a7146cbf7144bdb313808412563
+  - enabled: 1
+    path: Assets/Scenes/GamePlay/Fight.unity
+    guid: bb5fc45e681a5804e816aa3f0a9e5655
   m_configObjects: {}
