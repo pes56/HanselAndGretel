@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
+  m_Name: Bone
+  m_EditorClassIdentifier: 
+  itemName: Bone
+  itemSprite: {fileID: -683317046, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
+  itemDescription: Ew! This looks like it came from a person. You have to get me
+    out of here!
+  itemPrefab: {fileID: 4588275923700496330, guid: dfbdc2b50e167be43ac661912523c623, type: 3}
