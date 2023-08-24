@@ -37,7 +37,11 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
         holdingItem = true;
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
-        //inventoryManager.UpdateItemInSlot()
+        
+        
+       
+
+
         if (!FindObjectOfType<HanselItemDesc>())
         {
             return;

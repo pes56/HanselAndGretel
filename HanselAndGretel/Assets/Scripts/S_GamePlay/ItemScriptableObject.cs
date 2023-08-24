@@ -13,11 +13,13 @@ public class ItemScriptableObject : ScriptableObject
     public string activeInScene;
     public GameObject gameLoadPosition;
     public Vector3 lastPosition;
+    
 
     public void OnEnable()
     {
         inHotbar = false;
         activeInScene = null;
+       
         lastPosition = gameLoadPosition.transform.localPosition;
 
     }
