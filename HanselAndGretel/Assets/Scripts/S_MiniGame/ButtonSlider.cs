@@ -15,8 +15,10 @@ public class ButtonSlider : MonoBehaviour
     public float increaseAmount = 10f;
     public float maxSliderValue = 100f;
 
-    public Image buttonImage; // Reference to the Image component of the button
-    public Sprite newButtonSprite; // The new sprite to be applied when the animation stops
+    public Image buttonImage;
+    public Sprite newButtonSprite;
+
+    public Image hiddenImage; // Reference to the hidden Image component
 
     private bool shouldPlayAnimation = false;
 
@@ -45,6 +47,7 @@ public class ButtonSlider : MonoBehaviour
             slider.gameObject.SetActive(false);
             centerArea.SetActive(false);
             StopAnimation();
+            hiddenImage.gameObject.SetActive(true); // Show the hidden image
         }
         else
         {
@@ -57,10 +60,11 @@ public class ButtonSlider : MonoBehaviour
         buttonAnimator.speed = 0f;
         buttonAnimator.Play(buttonAnimator.GetCurrentAnimatorStateInfo(0).fullPathHash, -1, 0f);
 
-        // Change the sprite of the button's Image component
         if (buttonImage != null && newButtonSprite != null)
         {
             buttonImage.sprite = newButtonSprite;
         }
+
+        hiddenImage.gameObject.SetActive(true); // Show the hidden image
     }
 }

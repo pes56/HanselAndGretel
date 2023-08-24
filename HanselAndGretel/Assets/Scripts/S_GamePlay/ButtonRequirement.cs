@@ -10,11 +10,14 @@ public class ButtonRequirement : MonoBehaviour, IDropHandler
     private bool isImageDraggedOn = false;
 
     private Color normalButtonColor;
+    private Color opaqueButtonColor;
 
     private void Start()
     {
         normalButtonColor = targetButton.image.color;
-        SetButtonColorOpaque(); // Set the button's color to fully opaque initially
+        opaqueButtonColor = normalButtonColor;
+        opaqueButtonColor.a = 1f; // Set alpha channel to 1 (fully opaque)
+        SetButtonColor(opaqueButtonColor);
         targetButton.interactable = false; // Disable the button initially
     }
 
@@ -25,16 +28,14 @@ public class ButtonRequirement : MonoBehaviour, IDropHandler
         {
             isImageDraggedOn = true;
             targetButton.interactable = true; // Enable the button's functionality
-            SetButtonColorOpaque(); // Set the button's color to fully opaque
+            SetButtonColor(opaqueButtonColor); // Set the button's color to fully opaque
             ClickButton(); // Automatically click the button
         }
     }
 
-    private void SetButtonColorOpaque()
+    private void SetButtonColor(Color color)
     {
-        Color opaqueColor = normalButtonColor;
-        opaqueColor.a = 1f; // Set alpha channel to 1 (fully opaque)
-        targetButton.image.color = opaqueColor;
+        targetButton.image.color = color;
     }
 
     private void ClickButton()

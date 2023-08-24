@@ -54,7 +54,7 @@ public class HeavyMechanic : MonoBehaviour
                 isMovingMainButton = false; // Reset the flag once returned
 
                 // Reveal the hidden image
-                //hiddenImagePrefab.SetActive(true);
+                hiddenImage.gameObject.SetActive(true); // Activate the hidden image
 
                 // Enable the left slider button when the slider value returns to 0
                 if (slider.value == 0)
@@ -64,6 +64,7 @@ public class HeavyMechanic : MonoBehaviour
             }
         }
     }
+
 
     private void IncreaseSliderValue()
     {
