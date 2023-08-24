@@ -13,6 +13,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
     private Canvas canvas;
     public InventoryManager inventoryManager;
     public bool holdingItem = false;
+    ItemDisplay itemDisplay;
 
 
 
@@ -37,6 +38,9 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
         holdingItem = true;
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
+
+        itemDisplay = GetComponent<ItemDisplay>();
+        itemDisplay.itemData.untouched= false;
         
         
        

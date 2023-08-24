@@ -11,6 +11,12 @@ TagManager:
   - RedKey
   - MagnifyingGlass
   - MixingBowl
+  - LargePeppermintKey
+  - CookBook
+  - BlueKey
+  - SilverKey
+  - GoldenKey
+  - GoldenFlower
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,8 @@ public class ItemScriptableObject : ScriptableObject
     public string activeInScene;
     public GameObject gameLoadPosition;
     public Vector3 lastPosition;
+    public Vector3 itemScale;
+    public bool untouched;
     
 
     public void OnEnable()

@@ -14,6 +14,7 @@ public class ItemDisplay : MonoBehaviour
     public string itemName;
     public string itemDesc;
     public GameObject prefab;
+    
 
 
     private void Awake()
@@ -24,10 +25,10 @@ public class ItemDisplay : MonoBehaviour
         itemSprite.sprite = itemData.itemSprite;
         itemDesc = itemData.itemDescription;
         prefab = itemData.itemPrefab;
+        
+        itemData.itemScale = itemData.itemPrefab.transform.localScale;
 
-        //check what scene is active
-        Scene currentScene = SceneManager.GetActiveScene();
-        itemData.activeInScene = currentScene.name;
+       
 
 
         

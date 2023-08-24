@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: MagnifyingGlass
   itemSprite: {fileID: 1716794286, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
-  itemDescription: This looks like a magnifying glass. Maybe the Witch has bad eyesight?
-  itemPrefab: {fileID: 6984504174430474699, guid: ce51fc0d58a9ac044ad700713de44594, type: 3}
+  itemDescription: 'Nice find Gretel! She must be blind or something, I bet the key
+    to my cage is big! '
+  itemPrefab: {fileID: 2047807235118754986, guid: ce51fc0d58a9ac044ad700713de44594, type: 3}
   inHotbar: 0
-  activeInScene: 
-  gameLoadPosition: {fileID: 6984504174430474699, guid: ce51fc0d58a9ac044ad700713de44594, type: 3}
-  lastPosition: {x: -137, y: -69, z: 0}
+  activeInScene: HallWay
+  gameLoadPosition: {fileID: 2047807235118754986, guid: ce51fc0d58a9ac044ad700713de44594, type: 3}
+  lastPosition: {x: -292.21808, y: -18.445992, z: 0}

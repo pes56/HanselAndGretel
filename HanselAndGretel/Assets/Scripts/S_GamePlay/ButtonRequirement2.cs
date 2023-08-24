@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class ButtonRequirement2 : MonoBehaviour, IDropHandler
 {
-    public GameObject requiredItem; // Reference to the GameObject of the required item
+    public Image requiredItem; // Reference to the GameObject of the required item
     public string fightSceneName = "Fight"; // Name of the "Fight" scene
 
     public void OnDrop(PointerEventData eventData)
     {
         GameObject draggedObject = eventData.pointerDrag;
 
-        if (draggedObject != null && draggedObject == requiredItem)
+        if (draggedObject != null && draggedObject.GetComponent<Image>().sprite == requiredItem.sprite)
         {
             LoadFightScene();
         }

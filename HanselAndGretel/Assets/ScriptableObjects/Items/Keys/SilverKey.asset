@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
+  m_Name: SilverKey
+  m_EditorClassIdentifier: 
+  itemName: SilverKey
+  itemSprite: {fileID: -1148581266, guid: 9d6257fa6f5fff54580de60893944c53, type: 3}
+  itemDescription: Hmmm, this key seems too small to use here.
+  itemPrefab: {fileID: 5872033358443724054, guid: e95e1b72fd16e0047b07e104092fa238, type: 3}
+  inHotbar: 0
+  activeInScene: 
+  gameLoadPosition: {fileID: 5872033358443724054, guid: e95e1b72fd16e0047b07e104092fa238, type: 3}
+  lastPosition: {x: 137.5, y: -56, z: 0}
