@@ -12,15 +12,18 @@ public class ItemManager : MonoBehaviour
     {
         if (Instance == null)
         {
-            
+
             Instance = this;
             DontDestroyOnLoad(gameObject);
+
+            
         }
         else
         {
             Destroy(gameObject);
         }
     }
+
 
     public void RecordItemPositions()
     {
@@ -42,16 +45,50 @@ public class ItemManager : MonoBehaviour
     {
         foreach (ItemScriptableObject item in itemsInGame)
         {
-            if (item.activeInScene == sceneName)
+            if (item.activeInScene != null)
             {
-                Debug.Log(item.itemName + " is active in the current scene.");
+                if (item.activeInScene == sceneName)
+                {
+                    GameObject itemPrefab = item.itemPrefab;
+                    Vector3 spawnPosition = item.lastPosition;
+                    GameObject newItem = Instantiate(itemPrefab, spawnPosition, Quaternion.identity);
 
-                Debug.Log("Assigning " + item.itemName + " last known position");
+                    GameObject itemObject = GameObject.FindGameObjectWithTag(item.itemName);
+                    itemObject.transform.localPosition = item.lastPosition;
 
-                GameObject itemObject = GameObject.FindGameObjectWithTag(item.itemName);
-                itemObject.transform.localPosition = item.lastPosition;
-
+                }
             }
         }
     }
+
+    public void DestroyOriginalObjects(string sceneName)
+    {
+
+        foreach (ItemScriptableObject item in itemsInGame)
+        {
+            if (item.activeInScene != null)
+            {
+                if (item.activeInScene == sceneName && item.inHotbar == true)
+                {
+
+                    Debug.Log(item.name + " is in a hotbar");
+                    return;
+
+
+                }
+                else if (item.activeInScene == sceneName && item.unTouched)
+                {
+                    Debug.Log(item.name + " is untouched");
+                    return;
+                }
+                else if (item.activeInScene == sceneName && item.unTouched == false && item.lastPosition != item.gameLoadPosition.transform.position && item.inHotbar == false)
+                {
+                    Debug.Log("Destroying");
+                    Destroy(GameObject.FindGameObjectWithTag(item.itemName));
+                }
+            }
+        }
+    }
+
+   
 }

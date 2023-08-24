@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class ItemSlot : MonoBehaviour, IDropHandler, IPointerExitHandler
 {
@@ -17,6 +18,11 @@ public class ItemSlot : MonoBehaviour, IDropHandler, IPointerExitHandler
     {
         inventoryManager = FindObjectOfType<InventoryManager>();
         itemManager = FindObjectOfType<ItemManager>();
+
+        string sceneName = SceneManager.GetActiveScene().name;
+
+        itemManager.DestroyOriginalObjects(sceneName);
+        itemManager.SetItemPositions(sceneName);
         inventoryManager.InstantiatePersistentUI(slotData.slot, gameObject.transform.position);
 
     }

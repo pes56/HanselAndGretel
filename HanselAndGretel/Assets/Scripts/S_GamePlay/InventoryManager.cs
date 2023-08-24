@@ -51,36 +51,49 @@ public class InventoryManager : MonoBehaviour
         if (slotIndex >= 0 && slotIndex < hotbarSlots.Count)
         {
 
-
             if (hotbarSlots[slotIndex].currentItem != null)
             {
 
                 //check that there isnt already an item of this type in this scene
                 if (GameObject.FindGameObjectWithTag(hotbarSlots[slotIndex].currentItem.name) != null)
                 {
-                   GameObject itemToDelete = GameObject.FindGameObjectWithTag(hotbarSlots[slotIndex].currentItem.name);
-                   Destroy(itemToDelete);
+                    //delete items that already exsist
+                    GameObject itemToDelete = GameObject.FindGameObjectWithTag(hotbarSlots[slotIndex].currentItem.name);
+                    
+                    Destroy(itemToDelete);
                     Debug.Log("Deleting Item");
-
                 }
-
-                 
-                //instantiate the item from scriptable object data
-                Vector3 spawnPosition = slotPos;
-                GameObject currentItemPrefab = Instantiate(hotbarSlots[slotIndex].currentItem.itemPrefab, spawnPosition, Quaternion.identity);
-
-                //put the instantiated item in the item slot
-                Transform canvasTransform = FindObjectOfType<Canvas>().transform;
-                currentItemPrefab.transform.SetParent(canvasTransform, false);
-                currentItemPrefab.transform.position = slotPos;
-
-                //check what scene is active
+                
                 Scene currentScene = SceneManager.GetActiveScene();
-                hotbarSlots[slotIndex].currentItem.activeInScene = currentScene.name;
                 Debug.Log(currentScene.name);
+            
+                if (hotbarSlots[slotIndex].currentItem.activeInScene != currentScene.name && hotbarSlots[slotIndex].currentItem.inHotbar == true)
+                    {
+                        //instantiate the item from scriptable object data
+                        Vector3 spawnPosition = slotPos;
+                        GameObject currentItemPrefab = Instantiate(hotbarSlots[slotIndex].currentItem.itemPrefab, spawnPosition, Quaternion.identity);
+                        Debug.Log("instantiating at slot");
+
+                        //put the instantiated item in the item slot
+                        Transform canvasTransform = FindObjectOfType<Canvas>().transform;
+                        currentItemPrefab.transform.SetParent(canvasTransform, false);
+                        currentItemPrefab.transform.position = slotPos;
+
+                        
+                    }
+
+               
+
+                    //set this to active scene
+                    hotbarSlots[slotIndex].currentItem.activeInScene = currentScene.name;
+                    Debug.Log(currentScene.name);
+
+
 
 
             }
+
+            
         }
     }
 
