@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
-  m_Name: LargePeppermintKet
+  m_Name: LargePeppermintKey
   m_EditorClassIdentifier: 
   itemName: LargePeppermintKey
   itemSprite: {fileID: 1387503421, guid: 9d6257fa6f5fff54580de60893944c53, type: 3}
   itemDescription: A key! This looks like it might work on this cage!
-  itemPrefab: {fileID: 1322005484100737352, guid: a94cc2bc303125f4caff210f280ad3bf, type: 3}
+  itemPrefab: {fileID: 5543947902130669047, guid: a94cc2bc303125f4caff210f280ad3bf, type: 3}
   inHotbar: 0
   activeInScene: 
-  gameLoadPosition: {fileID: 1322005484100737352, guid: a94cc2bc303125f4caff210f280ad3bf, type: 3}
-  lastPosition: {x: 0, y: 58, z: 0}
+  gameLoadPosition: {fileID: 5543947902130669047, guid: a94cc2bc303125f4caff210f280ad3bf, type: 3}
+  lastPosition: {x: -165.4, y: -90.7, z: 0}
+  itemScale: {x: 0, y: 0, z: 0}
+  untouched: 0
