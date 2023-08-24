@@ -17,6 +17,9 @@ TagManager:
   - SilverKey
   - GoldenKey
   - GoldenFlower
+  - BronzeKey
+  - GreenKey
+  - SmallPeppermintKey
   layers:
   - Default
   - TransparentFX

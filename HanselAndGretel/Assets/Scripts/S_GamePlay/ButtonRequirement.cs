@@ -23,13 +23,13 @@ public class ButtonRequirement : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log(eventData.pointerDrag.GetComponent<Image>());
+        
 
 
         // Check if the dragged object is the required image
         if (eventData.pointerDrag.GetComponent<Image>().sprite == requiredItem.sprite)
         {
-            Debug.Log(eventData.pointerDrag.GetComponent<Image>());
+            
             isImageDraggedOn = true;
             targetButton.interactable = true; // Enable the button's functionality
             SetButtonColor(opaqueButtonColor); // Set the button's color to fully opaque

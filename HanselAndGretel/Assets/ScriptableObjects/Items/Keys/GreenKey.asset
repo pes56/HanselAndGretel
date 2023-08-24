@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
-  m_Name: GoldenFlower
+  m_Name: GreenKey
   m_EditorClassIdentifier: 
-  itemName: GoldenFlower
-  itemSprite: {fileID: 686593645, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
-  itemDescription: A golden flower! She probably loves gold, look for more gold things!
-  itemPrefab: {fileID: 7772707483909934176, guid: 377b1fa59361a0b4d9ec76a3ca50d380, type: 3}
+  itemName: GreenKey
+  itemSprite: {fileID: -30042809, guid: 9d6257fa6f5fff54580de60893944c53, type: 3}
+  itemDescription: I wonder if this can open anything?
+  itemPrefab: {fileID: 2262913627060015234, guid: dc872787b5740fa48abd27725afbe649, type: 3}
   inHotbar: 0
   activeInScene: 
-  gameLoadPosition: {fileID: 7772707483909934176, guid: 377b1fa59361a0b4d9ec76a3ca50d380, type: 3}
-  lastPosition: {x: -187, y: -63, z: 0}
+  gameLoadPosition: {fileID: 2262913627060015234, guid: dc872787b5740fa48abd27725afbe649, type: 3}
+  lastPosition: {x: 167, y: -29, z: 0}
   itemScale: {x: 0, y: 0, z: 0}
   untouched: 0
