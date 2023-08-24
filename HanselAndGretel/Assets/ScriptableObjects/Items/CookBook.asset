@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
+  m_Name: CookBook
+  m_EditorClassIdentifier: 
+  itemName: CookBook
+  itemSprite: {fileID: 1541978333, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
+  itemDescription: "A cookbook for the potion? It looks like it\u2019s missing an
+    ingredient, some sort of bone, but where could it be?"
+  itemPrefab: {fileID: 4014897306130747060, guid: 4fb84391e4b87c94c865b1106cf36902, type: 3}
+  inHotbar: 0
+  activeInScene: Shelf(CloseUp)
+  gameLoadPosition: {fileID: 4014897306130747060, guid: 4fb84391e4b87c94c865b1106cf36902, type: 3}
+  lastPosition: {x: -75, y: -67, z: 0}

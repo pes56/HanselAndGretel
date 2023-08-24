@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: MixingBowl
   itemSprite: {fileID: 1652079635, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
-  itemDescription: I think the Witch must have been using this to make potions!
+  itemDescription: A potion bowl? I wonder what she's making. She must have a recipe
+    lying around somewhere...
   itemPrefab: {fileID: 5000534623742599162, guid: aaa3b133f305bc049a68b7f4a26ba828, type: 3}
   inHotbar: 0
-  activeInScene: Kitchen
+  activeInScene: 
   gameLoadPosition: {fileID: 5000534623742599162, guid: aaa3b133f305bc049a68b7f4a26ba828, type: 3}
   lastPosition: {x: 88, y: 15, z: 0}

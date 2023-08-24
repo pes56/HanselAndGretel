@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
   m_Name: Candle
   m_EditorClassIdentifier: 
-  itemName: 
-  itemSprite: {fileID: 0}
-  itemDescription: 
-  itemPrefab: {fileID: 0}
+  itemName: Candle
+  itemSprite: {fileID: -164571896, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
+  itemDescription: Huh? This looks like a tiny candle with engravings on it, it must
+    be used to cast a spell or make some kind of potion.
+  itemPrefab: {fileID: 4845579858821253909, guid: 85a2018bb86dfbe43ab97f8d0eb71844, type: 3}
   inHotbar: 0
-  activeInScene: 
-  gameLoadPosition: {fileID: 0}
-  lastPosition: {x: 0, y: 0, z: 0}
+  activeInScene: Hansel Room
+  gameLoadPosition: {fileID: 4845579858821253909, guid: 85a2018bb86dfbe43ab97f8d0eb71844, type: 3}
+  lastPosition: {x: -134.28392, y: -180.05602, z: 0}

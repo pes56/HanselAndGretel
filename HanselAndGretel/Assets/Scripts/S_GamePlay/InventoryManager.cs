@@ -12,6 +12,7 @@ public class InventoryManager : MonoBehaviour
 
 
     public static InventoryManager Instance { get; private set; }
+    public ItemManager itemManager;
 
     //singleton pattern
     private void Awake()
@@ -45,6 +46,7 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+
     //refresh hotbar on scene load
     public void InstantiatePersistentUI(int slotIndex, Vector3 slotPos)
     {
@@ -53,47 +55,48 @@ public class InventoryManager : MonoBehaviour
 
             if (hotbarSlots[slotIndex].currentItem != null)
             {
-
-                //check that there isnt already an item of this type in this scene
-                if (GameObject.FindGameObjectWithTag(hotbarSlots[slotIndex].currentItem.name) != null)
+                if (hotbarSlots[slotIndex].currentItem.lastPosition == null)
                 {
-                    //delete items that already exsist
-                    GameObject itemToDelete = GameObject.FindGameObjectWithTag(hotbarSlots[slotIndex].currentItem.name);
-                    
-                    Destroy(itemToDelete);
-                    Debug.Log("Deleting Item");
+
+                    return;
                 }
-                
-                Scene currentScene = SceneManager.GetActiveScene();
-                Debug.Log(currentScene.name);
-            
-                if (hotbarSlots[slotIndex].currentItem.activeInScene != currentScene.name && hotbarSlots[slotIndex].currentItem.inHotbar == true)
+                else
+                {
+                    //check that there isnt already an item of this type in this scene
+                    if (GameObject.FindGameObjectWithTag(hotbarSlots[slotIndex].currentItem.name) != null)
+                    {
+                        //delete items that already exsist
+                        GameObject itemToDelete = GameObject.FindGameObjectWithTag(hotbarSlots[slotIndex].currentItem.name);
+
+                        Destroy(itemToDelete);
+                        
+                    }
+
+                    Scene currentScene = SceneManager.GetActiveScene();
+                    
+
+                    if (hotbarSlots[slotIndex].currentItem.activeInScene != currentScene.name && hotbarSlots[slotIndex].currentItem.inHotbar == true)
                     {
                         //instantiate the item from scriptable object data
                         Vector3 spawnPosition = slotPos;
                         GameObject currentItemPrefab = Instantiate(hotbarSlots[slotIndex].currentItem.itemPrefab, spawnPosition, Quaternion.identity);
-                        Debug.Log("instantiating at slot");
+                       
 
                         //put the instantiated item in the item slot
                         Transform canvasTransform = FindObjectOfType<Canvas>().transform;
                         currentItemPrefab.transform.SetParent(canvasTransform, false);
                         currentItemPrefab.transform.position = slotPos;
 
+                        //set this to active scene
+                        hotbarSlots[slotIndex].currentItem.activeInScene = currentScene.name;
                         
+
                     }
 
-               
-
-                    //set this to active scene
-                    hotbarSlots[slotIndex].currentItem.activeInScene = currentScene.name;
-                    Debug.Log(currentScene.name);
-
-
-
-
+                    
+                }
             }
 
-            
         }
     }
 

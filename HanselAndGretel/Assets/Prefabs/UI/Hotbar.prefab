@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5872516132586198985}
   - component: {fileID: 241704871879013620}
+  - component: {fileID: 7014705230134034806}
   - component: {fileID: 3273957218915106456}
   m_Layer: 5
   m_Name: Hotbar
@@ -51,6 +52,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5872516132586198986}
   m_CullTransparentMesh: 1
+--- !u!114 &7014705230134034806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5872516132586198986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd0db7f925ced0247b0de989f05acaaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3273957218915106456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotData: {fileID: 11400000, guid: 3b78597357cca044c9e21fc54abd238e, type: 2}
   inventoryManager: {fileID: 0}
+  itemManager: {fileID: 0}
 --- !u!114 &7062421991561518022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,6 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotData: {fileID: 11400000, guid: 80cb92a48d950054390fe5c85aa2176f, type: 2}
   inventoryManager: {fileID: 0}
+  itemManager: {fileID: 0}
 --- !u!114 &7062421991891799277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotData: {fileID: 11400000, guid: 2ede46a72d997fa4094a7664580ff94e, type: 2}
   inventoryManager: {fileID: 0}
+  itemManager: {fileID: 0}
 --- !u!114 &7062421992203318811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,6 +431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotData: {fileID: 11400000, guid: bb5f04fb7818a574dbb0a561b90fcce9, type: 2}
   inventoryManager: {fileID: 0}
+  itemManager: {fileID: 0}
 --- !u!114 &7062421992540280655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,6 +523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotData: {fileID: 11400000, guid: 1190b1b7c4d30284db83d9c3792ed28a, type: 2}
   inventoryManager: {fileID: 0}
+  itemManager: {fileID: 0}
 --- !u!114 &7062421992682925276
 MonoBehaviour:
   m_ObjectHideFlags: 0

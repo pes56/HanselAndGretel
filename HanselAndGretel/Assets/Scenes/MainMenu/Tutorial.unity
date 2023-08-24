@@ -315,7 +315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Right Click - Click and Drag items \n"
+  m_text: "Left Click - Click and Drag items \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cebedc4ed00c212438c7dae41ef612a9, type: 2}
   m_sharedMaterial: {fileID: 1062722102325253253, guid: cebedc4ed00c212438c7dae41ef612a9, type: 2}
