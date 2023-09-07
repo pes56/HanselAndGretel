@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
-  m_Name: GoldenKey
+  m_Name: Bow
   m_EditorClassIdentifier: 
-  itemName: GoldenKey
-  itemSprite: {fileID: -505121528, guid: 9d6257fa6f5fff54580de60893944c53, type: 3}
-  itemDescription: 
-  itemPrefab: {fileID: 1547121802234030600, guid: 7a6a6e48f2fc9af458daa8806d88ccb1, type: 3}
+  itemName: Bow
+  itemSprite: {fileID: -812750969, guid: 791856ebeaf6fa94c99b19dcdb7adfa0, type: 3}
+  itemDescription: Looks like someone got a gift recently. Or maybe this came from
+    someone's clothes?
+  itemPrefab: {fileID: 3014120357778127698, guid: 8a5d3818192157a4daed109398f1387b, type: 3}
   inHotbar: 0
   activeInScene: 
-  gameLoadPosition: {fileID: 1547121802234030600, guid: 7a6a6e48f2fc9af458daa8806d88ccb1, type: 3}
-  lastPosition: {x: 4.3, y: 48, z: 0}
+  gameLoadPosition: {fileID: 3014120357778127698, guid: 8a5d3818192157a4daed109398f1387b, type: 3}
+  lastPosition: {x: 0, y: 0, z: 0}
   itemScale: {x: 0, y: 0, z: 0}
   untouched: 1

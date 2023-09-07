@@ -27,6 +27,8 @@ TagManager:
   - AnimalSkull
   - CatToy
   - Key
+  - Bow
+  - Perfume
   layers:
   - Default
   - TransparentFX
