@@ -471,6 +471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle
       objectReference: {fileID: 0}
+    - target: {fileID: 4845579858821253915, guid: 85a2018bb86dfbe43ab97f8d0eb71844, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -164571896, guid: 9846b16cf3ee5704987c3aa303eccd1f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85a2018bb86dfbe43ab97f8d0eb71844, type: 3}
 --- !u!1 &378839216
@@ -666,6 +670,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f406f4caec532a0448ec73520d723c0e, type: 2}
   - {fileID: 11400000, guid: 31a709728ec593342a2692ee9c84b909, type: 2}
   - {fileID: 11400000, guid: 4f5c2373d94830b4f91077f94f9960e8, type: 2}
+  - {fileID: 11400000, guid: fb44b1f1fcdc515408e06105a4ae28da, type: 2}
+  - {fileID: 11400000, guid: 215ffca065b89b94e930f612badc3a15, type: 2}
+  - {fileID: 11400000, guid: ede0f7e39636bf946b91a93838d134b1, type: 2}
+  - {fileID: 11400000, guid: 36242d34b8d0c7c43b1600e967b28cb6, type: 2}
+  - {fileID: 11400000, guid: 7a75a8a60c90dd84e9a91e6131c7483a, type: 2}
+  - {fileID: 11400000, guid: 1f0f4dd4f518cad40a75df2cd3db65c8, type: 2}
 --- !u!224 &793118825 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4845579858821253908, guid: 85a2018bb86dfbe43ab97f8d0eb71844, type: 3}

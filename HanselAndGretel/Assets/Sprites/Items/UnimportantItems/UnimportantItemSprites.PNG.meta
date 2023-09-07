@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_3026_0
+      name: CoffeeCup
       rect:
         serializedVersion: 2
         x: 103
@@ -125,7 +125,7 @@ TextureImporter:
         width: 297
         height: 257
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_3026_1
+      name: Bow
       rect:
         serializedVersion: 2
         x: 517
@@ -146,7 +146,7 @@ TextureImporter:
         width: 429
         height: 216
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,7 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_3026_2
+      name: CatToy
       rect:
         serializedVersion: 2
         x: 953
@@ -167,7 +167,7 @@ TextureImporter:
         width: 442
         height: 242
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,7 +180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_3026_3
+      name: Perfume
       rect:
         serializedVersion: 2
         x: 1447
@@ -188,7 +188,7 @@ TextureImporter:
         width: 254
         height: 307
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,7 +201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_3026_4
+      name: FrogLeg
       rect:
         serializedVersion: 2
         x: 210
@@ -209,7 +209,7 @@ TextureImporter:
         width: 397
         height: 237
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -222,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_3026_5
+      name: Yarn
       rect:
         serializedVersion: 2
         x: 631
@@ -230,7 +230,7 @@ TextureImporter:
         width: 268
         height: 301
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -243,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_3026_6
+      name: AnimalSkull
       rect:
         serializedVersion: 2
         x: 1214
@@ -251,7 +251,7 @@ TextureImporter:
         width: 392
         height: 363
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -264,7 +264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_3026_7
+      name: Knife
       rect:
         serializedVersion: 2
         x: 51
@@ -272,7 +272,7 @@ TextureImporter:
         width: 651
         height: 124
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,14 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IMG_3026_1: -812750969
-      IMG_3026_3: -1091398072
-      IMG_3026_4: 458916423
-      IMG_3026_2: -203783945
-      IMG_3026_7: 702214505
-      IMG_3026_6: 853848657
-      IMG_3026_5: 1064254186
-      IMG_3026_0: 992988155
+      FrogLeg: 458916423
+      CatToy: -203783945
+      Perfume: -1091398072
+      CoffeeCup: 992988155
+      Knife: 702214505
+      Yarn: 1064254186
+      Bow: -812750969
+      AnimalSkull: 853848657
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
