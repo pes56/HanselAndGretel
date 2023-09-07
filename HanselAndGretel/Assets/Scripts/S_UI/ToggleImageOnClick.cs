@@ -5,7 +5,7 @@ public class ToggleImageOnClick : MonoBehaviour
 {
     public Image imageToShow;
 
-    private bool isImageVisible = false;
+    public bool isImageVisible = false;
 
     private void Start()
     {

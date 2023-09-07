@@ -1,76 +1,156 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WitchCheck : MonoBehaviour
 {
+    //References HeavyMechanic script
+    HeavyMechanic heavyMechanic; //Empty field to hold HeavyMechanic script
+    [SerializeField] GameObject movableObject;
+
+    //References ToggleImageOnClick script
+    ToggleImageOnClick toggleImageOnClick; //Empty field to hold ToggleImageOnClick script
+    [SerializeField] GameObject imageOnCouch;
+
     public GameObject witch;
-    Rigidbody2D rb;
+    //private Animation anim;
 
-    float horizontal;
-    bool facingRight = true;
+    //Accesses the sprite to change to
+    public SpriteRenderer spriteRenderer;
+    public Sprite[] witchSprite;
 
-    [SerializeField] Transform[] Positions;
-    [SerializeField] float ObjectSpeed;
+    //Her lines to play when object moves
+    [SerializeField] private AudioClip witchIntro;
+    [SerializeField] private AudioClip witchLVL1;
+    [SerializeField] private AudioClip witchLVL2;
+    [SerializeField] private AudioClip witchLVL3;
 
-    int NextPosIndex;
-    Transform nextPos;
+    public bool hasGivenLine = false;
 
-    private bool hasChanged = false;
-    private float roomChange = 0;
-    //private float waitTimeIn = 0.5f;
-    //private float waitTimeOut = 1f;
+    private float startTimer = 0;
+
+    //Time limit before witch appears
+    private float witchShowTime = 50.0f;
+
+    public float beginTimer = 0;
+
+    //Time limit before object disappears
+    public float endTime = 50.0f;
+
+    //Check how many times an object moved activated
+    private int timeMoved = 0;
+
+    private void Awake()
+    {
+        heavyMechanic = movableObject.GetComponent<HeavyMechanic>(); //Gets the script components
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = gameObject.GetComponent<Rigidbody2D>();
-        nextPos = Positions[0];
+        if (hasGivenLine == false)
+        {
+            SoundManager.Instance.PlaySound(witchIntro);
+            hasGivenLine = true;
+        }
+
+        //anim = GetComponent<Animation>();
+        
+        //Checks to see if she is in the scene
+        //if (witch != null)
+        //{
+            //witch.gameObject.SetActive(false);
+        //}
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        WitchMove();
+        CheckObject();
     }
 
-    private void FixedUpdate()
+    void CheckObject()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-
-        if(horizontal > 0)
+        if (heavyMechanic.targetPosition != heavyMechanic.currentPosition)
         {
-            Flip();
-        }
-        if (horizontal < 0)
-        {
-            Flip();
-        }
-    }
+            timeMoved += 1;
+            startTimer += Time.fixedDeltaTime;
 
-    void Flip()
-    {
-        Vector3 currentScale = gameObject.transform.localScale;
-        currentScale.x *= -1;
-        gameObject.transform.localScale = currentScale;
-
-        facingRight = !facingRight;
-    }
-
-    void WitchMove()
-    {
-        if (transform.position == nextPos.position)
-        {
-            NextPosIndex++;
-            if (NextPosIndex >= Positions.Length)
+            //Plays sound during time counting to signal witch
+            //if (timeMoved == 1)
+            //{
+            //    SoundManager.Instance.PlaySound(witchLVL1);
+            //} 
+            //else if(timeMoved == 2)
+            //{
+            //    SoundManager.Instance.PlaySound(witchLVL2);
+            //}
+            //else if (timeMoved >= 3)
+            //{
+            //    SoundManager.Instance.PlaySound(witchLVL3);
+            //}
+            
+            //The timer ends and the witch shows up in form
+            if (startTimer >= witchShowTime && timeMoved == 1)
             {
-                NextPosIndex = 0;
+                if (SceneManager.GetActiveScene().name == "HallWay")
+                {
+                    witch.SetActive(true);
+                }
+                else
+                {
+                    inRightRoom();
+                }
             }
-            nextPos = Positions[NextPosIndex];
-        }
-        else
+            
+            if (startTimer >= witchShowTime && timeMoved == 2)
+            {
+                if (SceneManager.GetActiveScene().name == "HallWay")
+                {
+                    witch.SetActive(true);
+                    spriteRenderer.sprite = witchSprite[0];
+                }
+                else
+                {
+                    inRightRoom();
+                }
+            }
+
+            if(startTimer >= witchShowTime && timeMoved >= 3)
+            {
+                if (SceneManager.GetActiveScene().name == "HallWay")
+                {
+                    witch.SetActive(true);
+                    spriteRenderer.sprite = witchSprite[1];
+                }
+                else
+                {
+                    inRightRoom();
+                }
+            }
+        } 
+    }
+
+    void inRightRoom()
+    {
+        if (SceneManager.GetActiveScene().name != "HallWay")
         {
-            transform.position = Vector3.MoveTowards(transform.position, nextPos.position, ObjectSpeed * Time.deltaTime);
+            SceneManager.LoadScene("BadEnding");
+        }
+
+        if (toggleImageOnClick.isImageVisible == false)
+        {
+            SceneManager.LoadScene("BadEnding");
+        }
+    }
+
+    void InitialScene()
+    {
+        beginTimer += Time.fixedDeltaTime;
+        if (beginTimer >= endTime)
+        {
+            witch.SetActive(false);
         }
     }
 }

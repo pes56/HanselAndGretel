@@ -20,7 +20,8 @@ public class HeavyMechanic : MonoBehaviour
     private bool isMaxValueReached = false;
     private bool shouldMoveMainButton = false;
     private bool isMovingMainButton = false;
-    private Vector3 targetPosition;
+    public Vector3 targetPosition;
+    public Vector3 currentPosition;
 
     private void Start()
     {
@@ -29,7 +30,7 @@ public class HeavyMechanic : MonoBehaviour
         
     }
 
-    private void Update()
+    public void Update()
     {
         if (isMovingMainButton)
         {

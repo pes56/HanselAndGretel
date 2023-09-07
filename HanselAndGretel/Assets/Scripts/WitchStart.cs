@@ -6,6 +6,8 @@ public class WitchStart : MonoBehaviour
 {
     public GameObject witch;
 
+    public bool hasGivenLine = false;
+
     public float beginTimer = 0;
 
     //Time limit before object disappears
@@ -16,7 +18,12 @@ public class WitchStart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SoundManager.Instance.PlaySound(witchIntro);
+        if (hasGivenLine == false)
+        {
+            SoundManager.Instance.PlaySound(witchIntro);
+            hasGivenLine = true;
+        }
+        
     }
 
     // Update is called once per frame
