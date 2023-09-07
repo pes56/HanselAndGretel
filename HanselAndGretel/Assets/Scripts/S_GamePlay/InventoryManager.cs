@@ -57,7 +57,6 @@ public class InventoryManager : MonoBehaviour
             {
                 if (hotbarSlots[slotIndex].currentItem.lastPosition == null)
                 {
-
                     return;
                 }
                 else

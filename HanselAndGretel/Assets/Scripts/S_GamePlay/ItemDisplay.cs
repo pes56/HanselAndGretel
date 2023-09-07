@@ -26,8 +26,13 @@ public class ItemDisplay : MonoBehaviour
         itemDesc = itemData.itemDescription;
         prefab = itemData.itemPrefab;
         
-        itemData.itemScale = itemData.itemPrefab.transform.localScale;
+        itemData.itemScale = prefab.transform.localScale;
 
+        if (itemData.untouched == true)
+        {
+            itemData.activeInScene = SceneManager.GetActiveScene().name;
+        }
+        
        
 
 

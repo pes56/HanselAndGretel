@@ -40,7 +40,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
         canvasGroup.blocksRaycasts = false;
 
         itemDisplay = GetComponent<ItemDisplay>();
-        itemDisplay.itemData.untouched= false;
+        itemDisplay.itemData.untouched = false;
         
         
        
