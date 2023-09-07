@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ButtonRequirement2 : MonoBehaviour, IDropHandler
 {
     public Image requiredItem; // Reference to the GameObject of the required item
-    public string fightSceneName = "Fight"; // Name of the "Fight" scene
+    public string fightSceneName = "FreeHansel"; // Name of the "FreeHansel" scene
 
     public void OnDrop(PointerEventData eventData)
     {

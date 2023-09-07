@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GamePlay/Fight.unity
     guid: bb5fc45e681a5804e816aa3f0a9e5655
+  - enabled: 1
+    path: Assets/Scenes/GamePlay/FreeHansel.unity
+    guid: df755946bfe99b84cb4fbb37f1d59371
   m_configObjects: {}
