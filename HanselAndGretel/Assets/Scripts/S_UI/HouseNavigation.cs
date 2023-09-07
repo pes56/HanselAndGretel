@@ -58,6 +58,13 @@ public class HouseNavigation : MonoBehaviour
     public void FreeHansel()
     {
         itemManager.RecordItemPositions();
+        SceneManager.LoadScene("Altercation");
+
+    }
+
+    public void Altercation()
+    {
+        itemManager.RecordItemPositions();
         SceneManager.LoadScene("Fight");
 
     }

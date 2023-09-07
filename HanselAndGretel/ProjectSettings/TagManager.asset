@@ -26,6 +26,7 @@ TagManager:
   - FrogLeg
   - AnimalSkull
   - CatToy
+  - Key
   layers:
   - Default
   - TransparentFX

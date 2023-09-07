@@ -9,66 +9,69 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/MainMenu/MainMenu.unity
+    path: Assets/Prefabs/Scenes/MainMenu/MainMenu.unity
     guid: 34275be5352b3644a9979e73313c7694
   - enabled: 1
-    path: Assets/Scenes/MainMenu/Credits.unity
+    path: Assets/Prefabs/Scenes/MainMenu/Credits.unity
     guid: 810764d619c54244c948ea2f23c73a26
   - enabled: 1
-    path: Assets/Scenes/Prologues/Prologue.unity
+    path: Assets/Prefabs/Scenes/Prologues/Prologue.unity
     guid: 479bbcafc9392694c9ef2cbed8873aa7
   - enabled: 1
-    path: Assets/Scenes/Prologues/Prologue2.unity
+    path: Assets/Prefabs/Scenes/Prologues/Prologue2.unity
     guid: 8e75856a69a4e9a42a8e55bf52f32d79
   - enabled: 1
-    path: Assets/Scenes/Prologues/Prologue3.unity
+    path: Assets/Prefabs/Scenes/Prologues/Prologue3.unity
     guid: 9a53bc37d065dc245899f0657eff01d5
   - enabled: 1
-    path: Assets/Scenes/Prologues/Prologue4.unity
+    path: Assets/Prefabs/Scenes/Prologues/Prologue4.unity
     guid: 3c55b2336ba103e4cb4efe2bd86c40c6
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/GamePlay/MainRoom.unity
+    path: Assets/Prefabs/Scenes/GamePlay/MainRoom.unity
     guid: 590c252a64b2bb44586d99f6a22be798
   - enabled: 1
-    path: Assets/Scenes/GamePlay/WitchScene.unity
+    path: Assets/Prefabs/Scenes/GamePlay/WitchScene.unity
     guid: 33f5529cb11afdc43aa9714b81826b13
   - enabled: 1
-    path: Assets/Scenes/GamePlay/HallWay.unity
+    path: Assets/Prefabs/Scenes/GamePlay/HallWay.unity
     guid: 593b2fe4f3d99ba4e8870269cab857bc
   - enabled: 1
-    path: Assets/Scenes/GamePlay/Basement.unity
+    path: Assets/Prefabs/Scenes/GamePlay/Basement.unity
     guid: f0d1d6c067ff65445adf4b8e92e117a3
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/GamePlay/Kitchen.unity
+    path: Assets/Prefabs/Scenes/GamePlay/Kitchen.unity
     guid: 17beb21aeca1c2d4daabf44dcac6b07a
   - enabled: 1
-    path: Assets/Scenes/MainMenu/Tutorial.unity
+    path: Assets/Prefabs/Scenes/MainMenu/Tutorial.unity
     guid: b924c196c0a895b43b6bf4743b7982b7
   - enabled: 1
-    path: Assets/Scenes/Endings/GoodEnding.unity
+    path: Assets/Prefabs/Scenes/Endings/GoodEnding.unity
     guid: 015c555560ad53b4f9ecaf77fa02b249
   - enabled: 1
-    path: Assets/Scenes/Endings/BadEnding.unity
+    path: Assets/Prefabs/Scenes/Endings/BadEnding.unity
     guid: f2e9fe10af95e6e40b6f82048081a74c
   - enabled: 1
-    path: Assets/Scenes/GamePlay/KeyBox.unity
+    path: Assets/Prefabs/Scenes/GamePlay/KeyBox.unity
     guid: ad5123cd4562b1d48a54b1a342adfcb0
   - enabled: 1
-    path: Assets/Scenes/GamePlay/Hansel Room.unity
+    path: Assets/Prefabs/Scenes/GamePlay/Hansel Room.unity
     guid: fc6fedc45bbd65c418c6d6a281d474b8
   - enabled: 1
-    path: Assets/Scenes/GamePlay/Shelf(CloseUp).unity
+    path: Assets/Prefabs/Scenes/GamePlay/Shelf(CloseUp).unity
     guid: fef67a7146cbf7144bdb313808412563
   - enabled: 1
-    path: Assets/Scenes/GamePlay/Fight.unity
+    path: Assets/Prefabs/Scenes/GamePlay/Fight.unity
     guid: bb5fc45e681a5804e816aa3f0a9e5655
   - enabled: 1
-    path: Assets/Scenes/GamePlay/FreeHansel.unity
+    path: Assets/Prefabs/Scenes/GamePlay/FreeHansel.unity
     guid: df755946bfe99b84cb4fbb37f1d59371
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/GamePlay/Altercation.unity
+    guid: 275bfe077e36fd84d8f1abadde76acc4
   m_configObjects: {}
