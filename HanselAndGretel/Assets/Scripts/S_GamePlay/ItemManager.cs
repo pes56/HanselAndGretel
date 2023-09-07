@@ -38,8 +38,10 @@ public class ItemManager : MonoBehaviour
                 GameObject itemObject = GameObject.FindGameObjectWithTag(item.itemName);
                 if (itemObject != null)
                 {
+                   
                     item.lastPosition = itemObject.transform.localPosition;
                     
+
                 }
             }
         }

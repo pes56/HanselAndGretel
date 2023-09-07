@@ -3591,7 +3591,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 2047807235732848046}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -3998,13 +3998,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1930138910}
     m_Modifications:
+    - target: {fileID: 2047807235118754984, guid: ce51fc0d58a9ac044ad700713de44594, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2047807235118754986, guid: ce51fc0d58a9ac044ad700713de44594, type: 3}
       propertyPath: m_Name
       value: MagnifyingGlass
       objectReference: {fileID: 0}
     - target: {fileID: 2047807235118754986, guid: ce51fc0d58a9ac044ad700713de44594, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2047807235118754987, guid: ce51fc0d58a9ac044ad700713de44594, type: 3}
       propertyPath: m_Pivot.x
@@ -4099,13 +4103,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1930138910}
     m_Modifications:
+    - target: {fileID: 1606784260322137359, guid: 377b1fa59361a0b4d9ec76a3ca50d380, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7772707483909934176, guid: 377b1fa59361a0b4d9ec76a3ca50d380, type: 3}
       propertyPath: m_Name
       value: GoldenFlower
       objectReference: {fileID: 0}
     - target: {fileID: 7772707483909934176, guid: 377b1fa59361a0b4d9ec76a3ca50d380, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8070721099431225092, guid: 377b1fa59361a0b4d9ec76a3ca50d380, type: 3}
       propertyPath: m_Pivot.x
@@ -4198,14 +4206,8 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8070721099431225092, guid: 377b1fa59361a0b4d9ec76a3ca50d380, type: 3}
   m_PrefabInstance: {fileID: 6767463493945550561}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6767463493945550563 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1606784260322137359, guid: 377b1fa59361a0b4d9ec76a3ca50d380, type: 3}
+--- !u!1 &6767463493945550563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7772707483909934176, guid: 377b1fa59361a0b4d9ec76a3ca50d380, type: 3}
   m_PrefabInstance: {fileID: 6767463493945550561}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

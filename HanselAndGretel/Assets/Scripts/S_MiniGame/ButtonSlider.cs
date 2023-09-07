@@ -18,7 +18,7 @@ public class ButtonSlider : MonoBehaviour
     public Image buttonImage;
     public Sprite newButtonSprite;
 
-    public Image hiddenImage; // Reference to the hidden Image component
+    public GameObject hiddenImage; // Reference to the hidden Image component
 
     private bool shouldPlayAnimation = false;
 
@@ -47,7 +47,12 @@ public class ButtonSlider : MonoBehaviour
             slider.gameObject.SetActive(false);
             centerArea.SetActive(false);
             StopAnimation();
-            hiddenImage.gameObject.SetActive(true); // Show the hidden image
+
+            if (hiddenImage != null)
+            {
+                Image imageComponent = hiddenImage.gameObject.GetComponent<Image>();
+                imageComponent.enabled = true; // Show the hidden image
+            }
         }
         else
         {
@@ -65,6 +70,12 @@ public class ButtonSlider : MonoBehaviour
             buttonImage.sprite = newButtonSprite;
         }
 
-        hiddenImage.gameObject.SetActive(true); // Show the hidden image
+        if (hiddenImage != null)
+        {
+
+            Image imageComponent = hiddenImage.gameObject.GetComponent<Image>();
+
+            imageComponent.enabled = true; // Show the hidden image
+        }
     }
 }

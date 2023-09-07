@@ -53,8 +53,12 @@ public class HeavyMechanic : MonoBehaviour
                 mainButton.transform.position = targetPosition; // Ensure exact position
                 isMovingMainButton = false; // Reset the flag once returned
 
-                // Reveal the hidden image
-                hiddenImage.gameObject.SetActive(true); // Activate the hidden image
+                if (hiddenImage != null)
+                {
+                    // Reveal the hidden image
+                    Image imageComponent = hiddenImage.gameObject.GetComponent<Image>();
+                    imageComponent.enabled = true; // Show the hidden image
+                }
 
                 // Enable the left slider button when the slider value returns to 0
                 if (slider.value == 0)
@@ -104,7 +108,7 @@ public class HeavyMechanic : MonoBehaviour
 
         // Enable the hidden image (don't disable it)
         hiddenImage.gameObject.SetActive(true);
-        Debug.Log("showingitem");
+        
 
         // Enable the left slider button when the slider value returns to 0
         leftSliderButton.interactable = true;

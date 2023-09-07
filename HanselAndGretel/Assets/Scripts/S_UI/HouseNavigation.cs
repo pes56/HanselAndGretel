@@ -8,9 +8,10 @@ public class HouseNavigation : MonoBehaviour
     
 
     public void Awake()
-    { 
-        
+    {
         itemManager = FindObjectOfType<ItemManager>();
+        
+        
         
     }
     public void HallWay()

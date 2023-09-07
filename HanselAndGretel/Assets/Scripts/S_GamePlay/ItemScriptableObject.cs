@@ -14,15 +14,15 @@ public class ItemScriptableObject : ScriptableObject
     public GameObject gameLoadPosition;
     public Vector3 lastPosition;
     public Vector3 itemScale;
-    public bool untouched;
+    public bool untouched = true;
     
 
     public void OnEnable()
     {
         inHotbar = false;
         activeInScene = null;
-       
-        lastPosition = gameLoadPosition.transform.localPosition;
+        untouched = true;
+        
 
     }
 }
