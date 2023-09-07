@@ -15,10 +15,10 @@ MonoBehaviour:
   itemName: CatToy
   itemSprite: {fileID: -203783945, guid: 791856ebeaf6fa94c99b19dcdb7adfa0, type: 3}
   itemDescription: Aw! It's a little pet toy! I thought I wonder if a cat lives here?
-  itemPrefab: {fileID: 0}
+  itemPrefab: {fileID: 5029703222369791746, guid: aead1d65277a04a4f90b0133d91590d6, type: 3}
   inHotbar: 0
   activeInScene: 
-  gameLoadPosition: {fileID: 0}
+  gameLoadPosition: {fileID: 5029703222369791746, guid: aead1d65277a04a4f90b0133d91590d6, type: 3}
   lastPosition: {x: 0, y: 0, z: 0}
   itemScale: {x: 0, y: 0, z: 0}
   untouched: 1
