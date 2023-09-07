@@ -46,7 +46,7 @@ public class HanselItemDesc : MonoBehaviour, IDropHandler
     public void hideSpeechBubble()
     {
         speechBubble.SetActive(false);
-        hanselItemText.gameObject.SetActive(false); // Hide the TextMeshProUGUI component
+        hanselItemText.gameObject.SetActive(false); // Hide speech bubble
         hasItem = false;
     }
 
@@ -54,6 +54,6 @@ public class HanselItemDesc : MonoBehaviour, IDropHandler
     {
         speechBubble.SetActive(true);
         hanselItemDesc.text = itemDisplay.itemDesc;
-        hanselItemText.gameObject.SetActive(true); // Show the TextMeshProUGUI component
+        hanselItemText.gameObject.SetActive(true); // Show tspeech bubble
     }
 }

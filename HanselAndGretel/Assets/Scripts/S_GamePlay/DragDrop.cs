@@ -38,12 +38,9 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
         holdingItem = true;
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
-
         itemDisplay = GetComponent<ItemDisplay>();
         itemDisplay.itemData.untouched = false;
         
-        
-       
 
 
         if (!FindObjectOfType<HanselItemDesc>())
