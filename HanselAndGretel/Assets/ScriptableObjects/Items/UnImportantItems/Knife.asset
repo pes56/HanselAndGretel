@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
+  m_Name: Knife
+  m_EditorClassIdentifier: 
+  itemName: Knife
+  itemSprite: {fileID: 702214505, guid: 791856ebeaf6fa94c99b19dcdb7adfa0, type: 3}
+  itemDescription: Yikes this knife is pointy! It looks like someone has been sharpening
+    it a lot recently.
+  itemPrefab: {fileID: 7586575444511004232, guid: 498ef31b71b491e4881d53e73c48c59e, type: 3}
+  inHotbar: 0
+  activeInScene: 
+  gameLoadPosition: {fileID: 7586575444511004232, guid: 498ef31b71b491e4881d53e73c48c59e, type: 3}
+  lastPosition: {x: 0, y: 0, z: 0}
+  itemScale: {x: 0, y: 0, z: 0}
+  untouched: 1

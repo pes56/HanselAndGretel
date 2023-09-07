@@ -19,9 +19,14 @@ public class ItemSlot : MonoBehaviour, IDropHandler, IPointerExitHandler
         inventoryManager = FindObjectOfType<InventoryManager>();
         itemManager = FindObjectOfType<ItemManager>();
 
-        inventoryManager.InstantiatePersistentUI(slotData.slot, gameObject.transform.position);    
+        
 
 
+    }
+
+    public void Start()
+    {
+        inventoryManager.InstantiatePersistentUI(slotData.slot, gameObject.transform.position);
     }
     public void OnDrop(PointerEventData eventData)
     {

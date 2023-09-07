@@ -20,6 +20,12 @@ TagManager:
   - BronzeKey
   - GreenKey
   - SmallPeppermintKey
+  - Knife
+  - Yarn
+  - CoffeeCup
+  - FrogLeg
+  - AnimalSkull
+  - CatToy
   layers:
   - Default
   - TransparentFX

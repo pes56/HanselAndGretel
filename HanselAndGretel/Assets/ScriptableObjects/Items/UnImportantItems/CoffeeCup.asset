@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97b27fdd8269ec4c961f6cd07e46349, type: 3}
+  m_Name: CoffeeCup
+  m_EditorClassIdentifier: 
+  itemName: CoffeeCup
+  itemSprite: {fileID: 992988155, guid: 791856ebeaf6fa94c99b19dcdb7adfa0, type: 3}
+  itemDescription: Hmmm... is she really a witch or is this just a unique choice
+    of mug to keep?
+  itemPrefab: {fileID: 4077238516269294407, guid: 6e5e4a3c37e25fc4fb1ec9e4d0a5510b, type: 3}
+  inHotbar: 0
+  activeInScene: 
+  gameLoadPosition: {fileID: 4077238516269294407, guid: 6e5e4a3c37e25fc4fb1ec9e4d0a5510b, type: 3}
+  lastPosition: {x: 0, y: 0, z: 0}
+  itemScale: {x: 0, y: 0, z: 0}
+  untouched: 1
