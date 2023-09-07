@@ -51,6 +51,13 @@ public class HouseNavigation : MonoBehaviour
     {
         itemManager.RecordItemPositions();
         SceneManager.LoadScene("Shelf(CloseUp)");
+
         
+    }
+    public void FreeHansel()
+    {
+        itemManager.RecordItemPositions();
+        SceneManager.LoadScene("Fight");
+
     }
 }
