@@ -227,7 +227,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Kolton'
+  m_text: '- Kolton J'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cebedc4ed00c212438c7dae41ef612a9, type: 2}
   m_sharedMaterial: {fileID: 1062722102325253253, guid: cebedc4ed00c212438c7dae41ef612a9, type: 2}
@@ -362,7 +362,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Lily'
+  m_text: '- Lily Durand'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cebedc4ed00c212438c7dae41ef612a9, type: 2}
   m_sharedMaterial: {fileID: 1062722102325253253, guid: cebedc4ed00c212438c7dae41ef612a9, type: 2}
@@ -474,8 +474,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -96, y: -10.000004}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -36.34, y: -10.000004}
+  m_SizeDelta: {x: 285.37, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &742218620
 MonoBehaviour:
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Anastasia, Lisa and Parker'
+  m_text: '- Anastasia Lochard, Lisa Leunli and Parker Stuart'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cebedc4ed00c212438c7dae41ef612a9, type: 2}
   m_sharedMaterial: {fileID: 1062722102325253253, guid: cebedc4ed00c212438c7dae41ef612a9, type: 2}
@@ -632,7 +632,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Joshua'
+  m_text: '- Joshua S'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cebedc4ed00c212438c7dae41ef612a9, type: 2}
   m_sharedMaterial: {fileID: 1062722102325253253, guid: cebedc4ed00c212438c7dae41ef612a9, type: 2}
@@ -1802,8 +1802,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817911459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8972993, y: -1.436646, z: 0}
-  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_LocalPosition: {x: 5.09, y: -1.82, z: 0}
+  m_LocalScale: {x: 0.33625725, y: 0.3186954, z: 0.3636}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1886,8 +1886,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867012860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.61, y: -1.2, z: 0}
-  m_LocalScale: {x: 0.3767292, y: 0.3767292, z: 0.3767292}
+  m_LocalPosition: {x: 7.57, y: -1.77, z: 0}
+  m_LocalScale: {x: 0.32715163, y: 0.31950402, z: 0.3767292}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
